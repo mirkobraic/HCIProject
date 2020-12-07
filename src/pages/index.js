@@ -1,11 +1,14 @@
 import React from "react"
-
+ 
+import HeaderFooterLayout from "../layouts/headerFooter"
+// import TitlePage from '../modules/TitlePage'
+// import PageContent from "../modules/PageContent"
+ 
 const IndexPage = () => (
-  <main>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>This is were we will add content</p>
-  </main>
+  <HeaderFooterLayout activeTab="Home">
+    {/* <TitlePage /> */}
+    {/* <PageContent /> */}
+  </HeaderFooterLayout>
 )
-
+ 
 export default IndexPage
