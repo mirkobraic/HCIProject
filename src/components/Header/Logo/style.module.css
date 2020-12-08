@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap);
 
-.logo {
-  display: flex;
-  flex-flow: column;
-  width: fit-content;
-  height: 52px;
-}
-
 .logoText {
   font-family: "Permanent Marker";
   font-size: 52px
