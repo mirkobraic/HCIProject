@@ -6,6 +6,7 @@ import styles from './style.module.css'
 const HeaderNavigation = ({ activeTab }) => (
     <section className={styles.navigation}>
         <NavigationTabs activeTab={activeTab} />
+        {/* TODO: add login button and cart */}
     </section>
 )
  

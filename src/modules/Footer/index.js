@@ -3,6 +3,7 @@ import styles from './style.module.css'
 
 const Footer = () => (
   <footer className={styles.footer}>
+      {/* TODO */}
   </footer>
 )
 
