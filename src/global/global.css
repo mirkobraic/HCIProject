@@ -1,0 +1,38 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a,
+  a:active,
+  a:hover {
+    outline-width: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+
+
+  :root {
+    --main-color: rgb(0, 102, 204);
+    --main-color-light: rgba(0, 102, 204, 0.3);
+    --accent-color:  rgb(0, 0, 102);
+  }
