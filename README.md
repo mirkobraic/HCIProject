@@ -9,5 +9,5 @@
 2.  **Netlify**
 
     ```shell
-    https://extreme-sports.netlify.app/travel/
+    https://extreme-sports.netlify.app
     ```
