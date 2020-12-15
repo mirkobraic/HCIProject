@@ -6,6 +6,7 @@ import TitlePage from '../modules/TitlePage'
 const IndexPage = () => (
   <HeaderFooterLayout activeTab="Home">
     <TitlePage />
+    <PageContent />
   </HeaderFooterLayout>
 )
  
