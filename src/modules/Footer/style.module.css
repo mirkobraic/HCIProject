@@ -1,19 +1,19 @@
 .footer {
     background-color: var(--main-color);
-    padding: 40px;
+    padding: 20px 150px;
     display: flex;
     color: white;
     font-size: 16px;
+    align-items: center;
 }
 
-.footer .address {
-    list-style: none;
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-    border-right: 1px #999 solid;
-    padding-right: 10px;
-}
+    .footer .terms, .address, .phone {
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        padding-right: 100px;
+    }
+
 
 .title {
     font-size: 28px;
@@ -24,3 +24,16 @@
 .phone {
     margin: 11px 0;
 }
+
+    .phone .title {
+        color: rgba(0,0,0, 0)
+    }
+
+.footer .social {
+    padding: 150px;
+    position: relative;
+    background: url("https://i.pinimg.com/originals/48/52/a5/4852a5cb7f4ad9a76365651cc3fa440c.png") no-repeat center center;
+    background-size: cover;
+}
+
+
