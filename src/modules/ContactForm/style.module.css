@@ -1,0 +1,71 @@
+.contactForm {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+}
+
+    .contactForm h2 {
+        color: var(--main-color);
+        font-weight: lighter;
+        font-size: 28px;
+    }
+
+.contactInfo {
+    width: 80%;
+}
+/*/////////////*/
+.form form {
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+    .form form > div {
+        width: 45%;
+        margin-right: 45px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .form form input {
+        font-family: "Coda";
+        width: 400px;
+        height: 35px;
+        padding: 2px 20px;
+        background-color: lightgray;
+        font-size: 18px;
+        border: none;
+    }
+
+    .form form label {
+        padding: 10px 0;
+    }
+
+    .form form .message {
+        width: 94.5%;
+    }
+
+        .form form .message > input {
+            height: 200px;
+            width: 100%;
+        }
+
+.contactForm button {
+    background-color: var(--main-color);
+    color: white;
+    width: 185px;
+    padding: 11px 40px;
+    margin-left: auto;
+    margin-right: 9px;
+    margin-top: 15px;
+    border: none;
+    font-family: "Coda";
+    font-size: 18px;
+}
+
+    .contactForm button:hover {
+        background: rgba(0, 102, 204, 0.75);
+        cursor: pointer;
+    }
