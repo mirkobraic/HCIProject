@@ -8,6 +8,8 @@
         color: var(--main-color);
         font-weight: lighter;
         font-size: 28px;
+        margin-bottom: 0px;
+        
     }
 
 .contactInfo {
@@ -32,7 +34,7 @@
     .form form input {
         font-family: "Coda";
         width: 400px;
-        height: 35px;
+        height: 55px;
         padding: 2px 20px;
         background-color: lightgray;
         font-size: 18px;
