@@ -1,3 +1,4 @@
+/*
 .titleImage {
     height: 300px;
     width: 100%;
@@ -27,3 +28,31 @@
         margin-bottom: 45px;
     }
 
+*/
+
+.titleImage {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+    .titleImage > div {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-flow: column;
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .titleImage h1 {
+        font-size: 80px;
+        text-shadow: 0 0 20px var(--main-color);
+        margin-bottom: 45px;
+    }

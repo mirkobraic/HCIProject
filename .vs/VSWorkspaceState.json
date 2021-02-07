@@ -3,10 +3,9 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\ShopCategory",
     "\\src\\modules",
-    "\\src\\modules\\PageContent"
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\ShopCategory\\index.js",
+  "SelectedNode": "\\src\\pages",
   "PreviewInSolutionExplorer": false
 }
