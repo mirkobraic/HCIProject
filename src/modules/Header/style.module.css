@@ -2,6 +2,7 @@
     height: 90px;
     display: flex;
     justify-content: space-between;
-    margin: 0 15px;
+    padding: 0 50px;
     align-items: center;
-  }
+    background-color: var(--main-color);
+}

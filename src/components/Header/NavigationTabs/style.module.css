@@ -9,17 +9,17 @@
     padding: 5px 15px;
     list-style: none;
     width: fit-content;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 22px;
     text-transform: uppercase;
-    color: black
+    color: white;
   }
   .navigationBar li:hover {
-    border-bottom: 2px solid var(--main-color-light);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     cursor: pointer;
   }
   
   .navigationBar .active, .navigationBar .active:hover{
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 2px solid white;
   }
   
