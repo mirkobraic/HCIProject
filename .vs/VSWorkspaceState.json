@@ -3,14 +3,13 @@
     "",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\Header",
+    "\\src\\components\\Header\\Cart",
+    "\\src\\components\\Header\\Logo",
     "\\src\\components\\Header\\NavigationTabs",
-    "\\src\\components\\Images\\Category1",
-    "\\src\\global",
-    "\\src\\images",
     "\\src\\modules",
-    "\\src\\modules\\ContactForm",
-    "\\src\\modules\\Footer"
+    "\\src\\modules\\Header"
   ],
-  "SelectedNode": "\\src\\modules\\ContactForm\\style.module.css",
+  "SelectedNode": "\\src\\components\\Header\\NavigationTabs\\style.module.css",
   "PreviewInSolutionExplorer": false
 }
