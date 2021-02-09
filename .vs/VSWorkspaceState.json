@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\Header",
-    "\\src\\components\\Header\\Cart",
-    "\\src\\components\\Header\\Logo",
-    "\\src\\components\\Header\\NavigationTabs",
     "\\src\\modules",
-    "\\src\\modules\\Header"
+    "\\src\\modules\\Blog\\BlogSeparator",
+    "\\src\\modules\\Contact\\ContactSeperator",
+    "\\src\\modules\\Login",
+    "\\src\\modules\\Login\\LoginSeparator",
+    "\\src\\modules\\Travel",
+    "\\src\\modules\\Travel\\TravelSeparator",
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\Header\\NavigationTabs\\style.module.css",
+  "SelectedNode": "\\src\\pages\\login.js",
   "PreviewInSolutionExplorer": false
 }

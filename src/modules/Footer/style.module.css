@@ -5,6 +5,7 @@
     color: white;
     font-size: 16px;
     align-items: center;
+    justify-content: center;
 }
 
     .footer .terms, .address, .phone {
