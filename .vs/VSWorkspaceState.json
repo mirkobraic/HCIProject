@@ -2,15 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\components",
     "\\src\\modules",
-    "\\src\\modules\\Blog\\BlogSeparator",
-    "\\src\\modules\\Contact\\ContactSeperator",
-    "\\src\\modules\\Login",
-    "\\src\\modules\\Login\\LoginSeparator",
-    "\\src\\modules\\Travel",
-    "\\src\\modules\\Travel\\TravelSeparator",
+    "\\src\\modules\\PageContent",
+    "\\src\\modules\\TitlePage",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\login.js",
+  "SelectedNode": "\\src\\modules\\PageContent\\style.module.css",
   "PreviewInSolutionExplorer": false
 }
