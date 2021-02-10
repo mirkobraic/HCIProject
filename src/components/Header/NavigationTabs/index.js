@@ -1,9 +1,12 @@
 import React from 'react'
-import { navs as navTabs } from '../../../constants/const'
-import styles from './style.module.css'
 import { Link } from 'gatsby'
-import Cart from '../Cart'
+
+import styles from './style.module.css'
+
 import {myLocalStorage} from '../../../global/helper'
+import { navs as navTabs } from '../../../constants/const'
+import Cart from '../Cart'
+
 
 const loggedIn = () => !!myLocalStorage.getItem('loggedIn')
 

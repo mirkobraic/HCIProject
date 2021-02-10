@@ -6,11 +6,6 @@ import {IconContext} from "react-icons"
 import styles from './login.module.css'
 import {myLocalStorage} from '../global/helper'
 
-/*
-TODO: 
-- save username
-*/
-
 const users = [
 {
   username: "Dina",
