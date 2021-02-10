@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import {navigate} from 'gatsby'
+import { FaWindowClose } from 'react-icons/fa';
+import {IconContext} from "react-icons"
 
 import styles from './login.module.css'
 
 /*
 TODO: 
-- add undo
 - save username
 */
 
@@ -40,6 +41,10 @@ const Login = () => {
         setError('Wrong username or password')
     }, 2000)
   }
+
+    const closing = () => {
+        return navigate('/')
+  }
   
   return (
   <main className={styles.background} onKeyDown={key => {
@@ -47,6 +52,11 @@ const Login = () => {
       return submit()
   }}>
     <section className={styles.container}>
+      <close className={styles.close} onClick={() => closing()}>
+        <IconContext.Provider value={{ style: {fontSize: '30px', color: "lightgray"}}}>
+            <FaWindowClose />
+        </IconContext.Provider>
+      </close>
       <h2>LOGIN</h2>
       <section className={styles.field}>
         <label htmlFor="username" />
