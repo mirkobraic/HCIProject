@@ -3,6 +3,12 @@ import {navigate} from 'gatsby'
 
 import styles from './login.module.css'
 
+/*
+TODO: 
+- add undo
+- save username
+*/
+
 const users = [
 {
   username: "Dina",
@@ -27,7 +33,7 @@ const Login = () => {
       const loginSuccessful = !!users.find(user => user.username === username && user.password === password)
       setLoading(false)
       if (loginSuccessful) {
-        localStorage.setItem("loggedIn", username)
+        //localStorage.setItem("loggedIn", username)
         setError('Success')
         return navigate('/')
       }

@@ -4,6 +4,8 @@ import styles from './style.module.css'
 import { Link } from 'gatsby'
 import Cart from '../Cart'
 
+//TODO: show logout or login
+
 const NavigationBar = ({ activeTab }) => (
     <nav className={styles.navigationBar}>
         {navTabs.map(({tab, to}) => (
