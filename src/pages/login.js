@@ -48,25 +48,32 @@ const Login = () => {
       return submit()
   }}>
     <section className={styles.container}>
+
       <close className={styles.close} onClick={() => closing()}>
         <IconContext.Provider value={{ style: {fontSize: '30px', color: "lightgray"}}}>
             <FaWindowClose />
         </IconContext.Provider>
       </close>
+
       <h2>LOGIN</h2>
+
       <section className={styles.field}>
         <label htmlFor="username" />
         <input name="username" placeholder="Username..." onChange={e => setUserName(e.target.value)}/>
       </section>
+
       <section className={styles.field}>
         <label htmlFor="password" />
         <input name="password" type="password" placeholder="Password..." onChange={e => setPassword(e.target.value)} />
       </section>
+
       <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
       <p className = {styles.forgottenPassword}>Forgot a password?</p>
+
       <button className={styles.loginButton} onClick={() => submit()}>
         {loading ? 'Loading...' : 'Login'}
       </button>
+
     </section>
   </main>
 )}
