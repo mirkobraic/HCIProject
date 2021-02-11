@@ -63,6 +63,7 @@ const Login = () => {
         <input name="password" type="password" placeholder="Password..." onChange={e => setPassword(e.target.value)} />
       </section>
       <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
+      <p className = {styles.forgottenPassword}>Forgot a password?</p>
       <button className={styles.loginButton} onClick={() => submit()}>
         {loading ? 'Loading...' : 'Login'}
       </button>

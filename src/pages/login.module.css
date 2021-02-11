@@ -7,7 +7,7 @@
 .container {
     position: absolute;
     width: 360px;
-    height: 400px;
+    height: 450px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -52,6 +52,15 @@
         color: gray;
         background-color: lightgray;
     }
+
+.forgottenPassword {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.forgottenPassword:hover{
+    cursor: pointer;
+}
 
 .container button {
     width: 120px;

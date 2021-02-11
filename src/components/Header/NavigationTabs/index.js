@@ -17,13 +17,12 @@ const NavigationBar = ({ activeTab }) => (
                 <li className={tab === activeTab ? styles.active : ''}>{tab}</li>
             </Link>)
         )}
-
-        <Link to={'/login'}>
+        <Link to={loggedIn() ? '/' : '/login'}>
             <li onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}}>
                 {loggedIn() ? 'Logout' : 'Login'}
             </li>
         </Link>
-
+        
         <Cart/>
     </nav>
 )

@@ -4,10 +4,8 @@
     "\\src",
     "\\src\\components",
     "\\src\\modules",
-    "\\src\\modules\\Login",
-    "\\src\\modules\\Login\\Login",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\modules\\Login\\Login\\index.js",
+  "SelectedNode": "\\src\\pages\\login.module.css",
   "PreviewInSolutionExplorer": false
 }
