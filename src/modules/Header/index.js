@@ -5,6 +5,7 @@ import Navigation from '../../components/Header/Navigation'
 
 import styles from './style.module.css'
 
+
 const Header = props => (
   <>
   <section className={styles.header}>
