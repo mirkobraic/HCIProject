@@ -8,12 +8,12 @@ import {myLocalStorage} from '../global/helper'
 
 const users = [
 {
-  username: "Dina",
-  password: "1234"
+    username: "Dina",
+    password: "1234"
 },
 {
-  username: "Mirko",
-  password: "1234"
+    username: "Mirko",
+    password: "1234"
 },
 ]
 
