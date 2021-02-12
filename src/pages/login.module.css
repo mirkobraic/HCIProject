@@ -54,6 +54,7 @@
     }
 
 .forgottenPassword {
+    margin: 10px;
     color: var(--main-color);
     text-decoration: underline;
 }
@@ -99,3 +100,5 @@
     .success.show {
         opacity: 1;
     }
+
+
