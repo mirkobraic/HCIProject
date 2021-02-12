@@ -1,10 +1,19 @@
 .pageContent {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.total {
+    font-weight: bold;
+}
+
 bottun {
-    margin: 10px;
+    margin-top: 10px;
     padding: 10px;
     display: flex;
     justify-content: space-around;
