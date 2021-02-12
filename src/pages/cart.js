@@ -7,19 +7,25 @@ const CartPage = () => (
 	<div className={styles.pageContent}>
 		<h1>Shopping Cart</h1>
 
-		<p>PRODUCTS...</p>
-		
-		<span>Subtotal</span>
-		<span> 17.99</span>
-		<br/>
+		<p>PRODUCT 1</p>
+		<hr/>
+		<p>PRODUCT 2</p>
+		<hr/>
 
-		<span>Shipping costs</span>
-		<span> 3.99</span>
-		<br/>
+		<p>
+			<span>Subtotal</span>
+			<span> 17.99</span>
+		</p>
 
-		<span className={styles.total}>Total</span>
-		<span className={styles.total}> 21.98</span>
-		<br/>
+		<p>
+			<span>Shipping costs</span>
+			<span> 3.99</span>
+		</p>
+
+		<p className={styles.total}>
+			<span>Total</span>
+			<span> 21.98</span>
+		</p>
 
 		<Link to={'/'}>
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
