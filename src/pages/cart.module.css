@@ -3,16 +3,16 @@
     margin: 0 auto;
 }
 
-h1 {
+.pageTitle {
     font-size: 36px;
     color: var(--main-color);
 }
 
-hr {
+.productSeparator {
     color: lightgray;
 }
 
-p {
+.sum {
     display: flex;
     justify-content: space-between;
 }
@@ -21,18 +21,20 @@ p {
     font-weight: bold;
 }
 
-bottun {
+.shopButton {
     margin-top: 10px;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     color: white;
-}
-
-.shopButton {
     background-color: lightgray;
 }
 
 .homeButton {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
     background-color: var(--main-color);
 }
