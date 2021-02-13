@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\TitleImage",
+    "\\src\\modules",
+    "\\src\\modules\\Header",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\TitleImage\\style.module.css",
+  "SelectedNode": "\\src\\modules\\Header\\style.module.css",
   "PreviewInSolutionExplorer": false
 }
