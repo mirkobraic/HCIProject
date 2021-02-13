@@ -5,7 +5,6 @@ import TravelSeparator from '../modules/Travel/TravelSeparator'
 
 const TravelPage = () => (
     <HeaderFooterLayout activeTab="Travel">
-        <TitlePage />
         <TravelSeparator />
     </HeaderFooterLayout>
 )

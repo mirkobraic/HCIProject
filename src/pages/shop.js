@@ -5,7 +5,6 @@ import ShopSeparator from '../modules/Shop/ShopSeparator'
 
 const ShopPage = () => (
     <HeaderFooterLayout activeTab="Shop">
-        <TitlePage />
         <ShopSeparator />
     </HeaderFooterLayout>
 )

@@ -7,7 +7,6 @@ import BlogsContainer from '../modules/Blog/BlogsContainer'
 
 const BlogPage = () => (
     <HeaderFooterLayout activeTab="Blog">
-        <TitlePage />
         <BlogSeparator />
         <BlogsContainer />
     </HeaderFooterLayout>

@@ -7,7 +7,6 @@ import ContactSeperator from '../modules/Contact/ContactSeperator'
 
 const ContactPage = () => (
     <HeaderFooterLayout activeTab="Contact">
-        <TitlePage />
         <ContactSeperator />
         <ContactForm />
     </HeaderFooterLayout>
