@@ -3,13 +3,12 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Img from 'gatsby-image'
 import {Link} from 'gatsby'
  
-import styles from './blog.module.css'
+import styles from './travel.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
  
-const BlogPost = ({ pageContext }) => {
-  const { blogText, title, image} = pageContext
+const TravelPost = ({ pageContext }) => {
+  const { longText, title, image, price, time} = pageContext
  
-
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
@@ -20,11 +19,13 @@ const BlogPost = ({ pageContext }) => {
         </header>
         <Img fixed={image.fixed} />
         <article>
-        {blogText.internal.content}
+        {longText.internal.content}
         </article>
+        <span>{price}</span>
+        <span>{time}</span>
       </main>
     </HeaderFooterLayout>
   )
 }
  
-export default BlogPost
+export default TravelPost

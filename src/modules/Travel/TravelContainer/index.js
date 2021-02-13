@@ -14,12 +14,17 @@ const TravelContainers = () => {
             }
           }
           longText {
-            raw
+            internal {
+              content
+            }
           }
           title
           num
           price
-          startLocation
+          startLocation{
+            lat
+            lon
+          }
           time
           image {
             fixed(width: 300) {
