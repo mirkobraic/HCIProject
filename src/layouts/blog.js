@@ -7,7 +7,7 @@ import styles from './blog.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
  
 const BlogPost = ({ pageContext }) => {
-  const { blogText, title, id, image, shortInfo /*, next, prev*/} = pageContext
+  const { blogText, test, title, id, image, shortInfo /*, next, prev*/} = pageContext
  
 
   return (

@@ -9,7 +9,7 @@ const BlogContainers = () => {
          allContentfulBlogPost {
           nodes {
             title
-            id
+            num
             shortInfo{
                 internal {
                     content
@@ -44,7 +44,7 @@ const BlogContainers = () => {
         <ul className={styles.list}>
           {data.allContentfulBlogPost.nodes.map(node => {
             return (
-              <Link to={`/post/${node.id}`}>
+              <Link to={`/blog/${node.num}`}>
                 <li>
                   <Img fixed={node.image.fixed} />
                   <h3>{node.title}</h3>

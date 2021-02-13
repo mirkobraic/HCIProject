@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
     allContentfulBlogPost {
       nodes {
         title
-        id
+        num
         shortInfo{
             internal {
                     content
@@ -50,7 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
       next: index < array.length ? array[index + 1] : null,
       prev: index > 0 ? array[index - 1] : null
     },
-    path: `posts/${e.id}`,
-    id: `posts/${e.id}`
+    path: `blog/${e.num}`,
+    id: `blog/${e.num}`
   }))
 }
