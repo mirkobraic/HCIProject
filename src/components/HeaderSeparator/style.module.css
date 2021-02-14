@@ -4,15 +4,13 @@
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-color: var(--main-color);
+    background-color: white;
 }
 
 .separator h2 {
     font-size: 36px;
     padding: 0 20px;
-    color: white;
+    color: var(--main-color);
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: bold;
 }
-
-

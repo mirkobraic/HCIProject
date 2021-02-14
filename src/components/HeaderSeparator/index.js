@@ -2,10 +2,10 @@ import React from 'react'
  
 import styles from './style.module.css'
  
-const ShopSeparator = () => (
+const HeaderSeparator = ({ title }) => (
   <section className={styles.separator}>
-    <h2>SHOP</h2>
+    <h2>{title}</h2>
   </section>
 )
  
-export default ShopSeparator
+export default HeaderSeparator
