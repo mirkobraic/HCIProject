@@ -7,11 +7,12 @@
     background-color: var(--main-color);
 }
 
+.separator h2 {
+    font-size: 36px;
+    padding: 0 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
 
-    .separator h2 {
-        font-size: 36px;
-        padding: 0 20px;
-        color: white;
-        text-transform: uppercase;
-        font-weight: lighter;
-    }
+

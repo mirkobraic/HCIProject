@@ -1,0 +1,6 @@
+.shopItemsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    min-height: 50vh;
+}
