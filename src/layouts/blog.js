@@ -8,19 +8,17 @@ import styles from './blog.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
  
 const BlogPost = ({ pageContext }) => {
-  const { blogText, title, image} = pageContext
- 
+  const { blogText, title, image, author, date} = pageContext
 
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
-        <header>
-          <h2>
-            {title}
-          </h2>
-        </header>
-        <Img fixed={image.fixed} />
-        <ReactMarkdown children={blogText.internal.content} />
+        <Img className={styles.blogImage} fixed={image.fixed} />
+        <p className={styles.textHalf}>
+            <h1>{title}</h1>
+            <span>{author} {date}</span>
+            <ReactMarkdown children={blogText.internal.content} />
+        </p>
       </main>
     </HeaderFooterLayout>
   )

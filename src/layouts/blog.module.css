@@ -1,36 +1,29 @@
 .container {
+    margin-top: 90px;
     background-color: whitesmoke;
     display: flex;
     flex-flow: column;
-    align-items: center;
     padding: 0 100px;
 }
 
-    .container header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .container .headerTwo {
+    .container h1 {
         width: 52vw;
-        margin-left: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: var(--main-color);
     }
 
-    .container header span {
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 1px 1px 2px gray;
-        padding: 2px 4px;
-        background-color: white;
+.textHalf {
+    width: 60%;
+    margin: 0 auto;
+}
+
+    .textHalf span {
+        font-size: 14px;
+        color: gray;
     }
 
-    .container article {
-        line-height: 25px;
-        font-size: 20px;
-    }
+.blogImage {
+    margin: auto;
+}

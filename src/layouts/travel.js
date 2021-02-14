@@ -14,7 +14,7 @@ const TravelPost = ({ pageContext }) => {
     <HeaderFooterLayout>
       <main className={styles.container}>
         <p className={styles.textHalf}>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <ReactMarkdown children={longText.internal.content} />
             <bottun className={styles.priceBottun}>Book now: {price}</bottun>
         </p>
