@@ -29,7 +29,7 @@
 }
 
 .containerText {
-    background-color: lightgray;
+    background-color: var(--background-gray);
     padding: 10px;
 }
 

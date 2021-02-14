@@ -40,16 +40,19 @@ const BlogContainers = () => {
  
     return (
       <section className={styles.container}>
-        <h2>Read our blogposts!</h2>
         <ul className={styles.list}>
           {data.allContentfulBlogPost.nodes.map(node => {
             return (
               <Link to={`/blog/${node.num}`}>
                 <li>
                   <Img fixed={node.image.fixed} />
-                  <h3>{node.title}</h3>
-                  <span>{node.shortInfo.internal.content}</span>
-                </li>
+                  <p className={styles.containerText}>
+                      <h3 className={styles.title}>{node.title}</h3>
+                      <span>{node.shortInfo.internal.content}</span>
+                      <br/>
+                      <span className={styles.more}> Learn more...</span>
+                  </p>
+               </li>
               </Link>
             )
           })}
