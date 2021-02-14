@@ -4,13 +4,11 @@
     "\\src",
     "\\src\\layouts",
     "\\src\\modules",
-    "\\src\\modules\\Blog\\BlogsContainer",
-    "\\src\\modules\\Contact\\ContactSeperator",
-    "\\src\\modules\\Shop\\ShopSeparator",
-    "\\src\\modules\\Travel",
+    "\\src\\modules\\Home",
+    "\\src\\modules\\Home\\PageContent",
     "\\src\\modules\\Travel\\TravelContainer",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\layouts\\travel.js",
+  "SelectedNode": "\\src\\modules\\Home\\PageContent\\index.js",
   "PreviewInSolutionExplorer": false
 }
