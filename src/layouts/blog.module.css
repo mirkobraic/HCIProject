@@ -6,23 +6,23 @@
     padding: 0 100px;
 }
 
-    .container h1 {
-        width: 52vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: var(--main-color);
-    }
+.container h1 {
+    width: 52vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+}
 
 .textHalf {
     width: 60%;
     margin: 0 auto;
 }
 
-    .textHalf span {
-        font-size: 14px;
-        color: gray;
-    }
+.textHalf span {
+    font-size: 14px;
+    color: gray;
+}
 
 .blogImage {
     margin: auto;

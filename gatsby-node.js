@@ -103,4 +103,51 @@ exports.createPages = async ({ graphql, actions }) => {
     path: `travel/${e.num}`,
     id: `travel/${e.num}`
   }))
+
+
+
+  const shopRaw = await graphql(`query MyQuery {
+    allContentfulProduct {
+      nodes {
+        price
+        productInfo {
+          internal {
+            content
+          }
+        }
+        rating
+        title
+        num
+        category
+        image {
+          fixed(width: 300) {
+            src
+            srcSet
+            srcSetWebp
+            srcWebp
+            base64
+            aspectRatio
+          }
+        }
+        technicalInfo {
+          internal {
+            content
+          }
+        }
+      }
+    }
+  }`)
+
+ const shopRes = shopRaw.data.allContentfulProduct.nodes
+
+ shopRes.forEach((e, index, array) => actions.createPage({
+   component: path.resolve(`./src/layouts/shop.js`),
+   context: {
+     ...e,
+     next: index < array.length ? array[index + 1] : null,
+     prev: index > 0 ? array[index - 1] : null
+   },
+   path: `shop/${e.num}`,
+   id: `shop/${e.num}`
+ }))
 }

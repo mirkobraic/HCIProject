@@ -19,6 +19,7 @@ const ShopItems = () => {
             }
             rating
             title
+            num
             category
             image {
               fixed(width: 300) {
@@ -51,6 +52,7 @@ const ShopItems = () => {
                 title={product.title}
                 price={product.price}
                 rating={product.rating}
+                num={product.num}
               />
             )
           )
