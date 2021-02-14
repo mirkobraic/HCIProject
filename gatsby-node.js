@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
         author
         date
         image {
-          fixed(width: 300) {
+          fixed(width: 500) {
             src
             srcSet
             srcSetWebp
