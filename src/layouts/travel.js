@@ -11,7 +11,7 @@ const TravelPost = ({ pageContext }) => {
   const { longText, title, image, price} = pageContext
  
   return (
-    <HeaderFooterLayout>
+    <HeaderFooterLayout  activeTab="Travel">
       <main className={styles.container}>
         <p className={styles.textHalf}>
             <h1>{title}</h1>
@@ -23,5 +23,5 @@ const TravelPost = ({ pageContext }) => {
     </HeaderFooterLayout>
   )
 }
- 
+
 export default TravelPost

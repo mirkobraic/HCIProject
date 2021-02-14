@@ -11,7 +11,7 @@ const BlogPost = ({ pageContext }) => {
   const { blogText, title, image, author, date} = pageContext
 
   return (
-    <HeaderFooterLayout>
+    <HeaderFooterLayout  activeTab="Blog">
       <main className={styles.container}>
         <Img className={styles.blogImage} fixed={image.fixed} />
         <p className={styles.textHalf}>
