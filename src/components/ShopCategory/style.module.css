@@ -1,6 +1,7 @@
 .ShopCategory {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
     margin: 60px auto;
     width: 90vw;
 }
@@ -16,6 +17,3 @@
 .categoryTitle div {
     align-items: center;
 }
-
-
-
