@@ -2,11 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
+    "\\src\\layouts",
     "\\src\\modules",
-    "\\src\\modules\\Header",
+    "\\src\\modules\\Blog\\BlogsContainer",
+    "\\src\\modules\\Contact\\ContactSeperator",
+    "\\src\\modules\\Shop\\ShopSeparator",
+    "\\src\\modules\\Travel",
+    "\\src\\modules\\Travel\\TravelContainer",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\modules\\Header\\style.module.css",
+  "SelectedNode": "\\src\\layouts\\travel.js",
   "PreviewInSolutionExplorer": false
 }

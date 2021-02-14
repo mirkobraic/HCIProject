@@ -19,7 +19,7 @@ const TravelPost = ({ pageContext }) => {
         </header>
         <Img fixed={image.fixed} />
         <article>
-        {longText.internal.content}
+            {longText.internal.content}
         </article>
         <span>{price}</span>
         <span>{time}</span>
