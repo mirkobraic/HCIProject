@@ -2,17 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\Header",
-    "\\src\\components\\Header\\Logo",
-    "\\src\\images",
     "\\src\\layouts",
     "\\src\\modules",
-    "\\src\\modules\\Blog",
-    "\\src\\modules\\Blog\\BlogsContainer",
-    "\\src\\modules\\Shop",
-    "\\src\\pages"
+    "\\src\\modules\\Travel",
+    "\\src\\modules\\Travel\\TravelContainer"
   ],
-  "SelectedNode": "\\src\\images\\gray.jpg",
+  "SelectedNode": "\\src\\layouts\\shop.js",
   "PreviewInSolutionExplorer": false
 }
