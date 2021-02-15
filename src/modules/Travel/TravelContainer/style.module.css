@@ -10,6 +10,7 @@
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    justify-content: center;
     width: fit-content;
     margin: 0 100px;
 }
@@ -32,6 +33,7 @@
     background-color: ghostwhite;
     padding: 10px;
     padding-bottom: 20px;
+    height: 350px;
 }
 
 .more {
