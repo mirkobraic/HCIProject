@@ -16,7 +16,7 @@ const TravelPost = ({ pageContext }) => {
         <Img className={styles.travelImage} fixed={image.fixed} />
         <p className={styles.textHalf}>
             <h1>{title}</h1>
-            <bottun className={styles.priceBottun}>Book now from <b>$ </b>{price}</bottun>
+            <bottun className={styles.priceBottun}>Book now from $ {price}</bottun>
             <p>{shortInfo.internal.content}</p>
 
             <ReactMarkdown children={longText.internal.content} />
