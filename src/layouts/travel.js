@@ -18,7 +18,7 @@ const TravelPost = ({ pageContext }) => {
             <h1>{title}</h1>
             <bottun className={styles.priceBottun}>Book now from $ {price}</bottun>
             <p>{shortInfo.internal.content}</p>
-
+            <h1>OVERVIEW</h1>
             <ReactMarkdown children={longText.internal.content} />
         </p>
       </main>

@@ -16,7 +16,7 @@ const ShopItem = ({ pageContext }) => {
             <p className={styles.titleHalf}>
                 <p className={styles.itemPath}>Shop > {category} > {title}</p>
                 <h1>{title}</h1>
-                <p>$ {price}</p>
+                <p><b>$ {price}</b></p>
                 <p>Rating {rating}</p>
                 <p>
                     <span>Select quantity: </span>

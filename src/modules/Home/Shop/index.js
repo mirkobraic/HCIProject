@@ -15,12 +15,20 @@ const ShopContent = () => (
 		<Link to={'/shop'}>
 			<h1>Shop >></h1>
 		</Link>
-		<div>
-			<ShopCategory image={<Category1/>} title="Boats and paddle boats"/>
-			<ShopCategory image={<Category2/>} title="Equipment"/>
-			<ShopCategory image={<Category3/>} title="Clothing"/>
-			<ShopCategory image={<CategoryMore/>} title="Show more categories..."/>
-		</div>
+		<ul className={styles.list}>
+			<li>
+				<ShopCategory image={<Category1/>} title="Boats and paddle boats"/>
+			</li>
+			<li>
+				<ShopCategory image={<Category2/>} title="Equipment"/>
+			</li>
+			<li>
+				<ShopCategory image={<Category3/>} title="Clothing"/>
+			</li>
+			<li>
+				<ShopCategory image={<CategoryMore/>} title="Show more categories..."/>
+			</li>
+		</ul>
 	</section>)
 
 export default ShopContent
