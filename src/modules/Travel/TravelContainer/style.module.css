@@ -31,11 +31,14 @@
 .containerText {
     background-color: ghostwhite;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .more {
     color: gray;
     text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .priceBottun {
