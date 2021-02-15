@@ -2,30 +2,36 @@
     margin-top: 90px;
     background-color: whitesmoke;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     padding: 0 100px;
 }
 
-    .container h1 {
-        width: 52vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: var(--main-color);
-    }
+.container h1 {
+    width: 52vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+}
 
 .textHalf {
     width: 60%;
-    display: flex;
-    flex-flow: column;
+    margin: 0 auto;
+}
+
+.textHalf span {
+    font-size: 14px;
+    color: gray;
+}
+
+.travelImage {
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
 }
 
 .priceBottun {
     background-color: green;
     color: white;
     padding: 5px;
-}
-
-.travelImage {
-    margin: auto;
 }
