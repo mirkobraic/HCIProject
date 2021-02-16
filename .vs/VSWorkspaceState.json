@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\layouts",
-    "\\src\\modules",
-    "\\src\\modules\\Travel",
-    "\\src\\modules\\Travel\\TravelContainer"
+    "\\src\\global",
+    "\\src\\modules"
   ],
-  "SelectedNode": "\\src\\layouts\\shop.js",
+  "SelectedNode": "\\src\\global\\global.css",
   "PreviewInSolutionExplorer": false
 }
