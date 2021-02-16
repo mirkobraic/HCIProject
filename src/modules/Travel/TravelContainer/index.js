@@ -53,10 +53,8 @@ const TravelContainers = () => {
                   <p className={styles.containerText}>
                       <h3 className={styles.title}>{node.title}</h3>
                       <span>{node.shortInfo.internal.content}</span>
-                      <span className={styles.more}>Learn more...</span>
-                      <br/>
-                      <br/>
-                      <bottun className={styles.priceBottun}>FROM {node.price}</bottun>
+                      <p className={styles.more}> Learn more...</p>
+                      <bottun className={styles.priceBottun}>FROM $ {node.price}</bottun>
                   </p>
                 </li>
               </Link>

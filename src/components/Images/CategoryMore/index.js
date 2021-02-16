@@ -15,7 +15,7 @@ const CategoryMore = () => {
     }
   `)
    return (
-     <div style={{width: "250px", height: "250px"}}> 
+     <div style={{width: "300px", height: "300px"}}> 
        <Img fluid={data.myImage.childImageSharp.fluid} />
      </div>
    )
