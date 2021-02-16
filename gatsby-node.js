@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           time
           image {
-            fixed(width: 300) {
+            fixed(width: 500) {
               src
               srcSet
               srcSetWebp
@@ -120,14 +120,16 @@ exports.createPages = async ({ graphql, actions }) => {
         num
         category
         image {
-          fixed(width: 300) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            base64
-            aspectRatio
-          }
+            fixed(width: 500) {
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              width
+              height
+              base64
+              aspectRatio
+            }
         }
         technicalInfo {
           internal {
