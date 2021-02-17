@@ -7,7 +7,7 @@ import ShopCategory from '../../../components/ShopCategory'
 import Category1 from '../../../components/Images/Category1'
 import Category2 from '../../../components/Images/Category2'
 import Category3 from '../../../components/Images/Category3'
-import CategoryMore from '../../../components/Images/CategoryMore'
+import Category4 from '../../../components/Images/Category4'
 
 
 const ShopContent = () => (
@@ -17,16 +17,16 @@ const ShopContent = () => (
 		</Link>
 		<ul className={styles.list}>
 			<li>
-				<ShopCategory image={<Category1/>} title="Boats and paddle boats"/>
+				<ShopCategory image={<Category1/>} title="Snowboarding"/>
 			</li>
 			<li>
-				<ShopCategory image={<Category2/>} title="Equipment"/>
+				<ShopCategory image={<Category2/>} title="Kayaking"/>
 			</li>
 			<li>
-				<ShopCategory image={<Category3/>} title="Clothing"/>
+				<ShopCategory image={<Category3/>} title="Mountain biking"/>
 			</li>
 			<li>
-				<ShopCategory image={<CategoryMore/>} title="Show more categories..."/>
+				<ShopCategory image={<Category4/>} title="Surfing"/>
 			</li>
 		</ul>
 	</section>)
