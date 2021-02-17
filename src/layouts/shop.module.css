@@ -47,7 +47,7 @@
     background-color: lightgray;
     padding: 5px 13px;
     margin: 10px;
-    border-radius: 100%;
+    border-radius: .15rem;
 }
 
 .addToCart {
@@ -56,4 +56,7 @@
     color: white;
     width: 100px;
     text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }

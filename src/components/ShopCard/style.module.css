@@ -42,3 +42,11 @@
 .cardRating {
     font-size: 1.15rem;
 }
+
+.addToCart {
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+}
