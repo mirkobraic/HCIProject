@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 import styles from './style.module.css';
 
 const index = ({ image, category, title, price, rating, num }) => {
-    console.log(image);
+
     return (
       <Link to={`/shop/${num}`}>
         <div className={styles.card}>
