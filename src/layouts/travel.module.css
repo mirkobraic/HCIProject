@@ -30,6 +30,17 @@
     width: 60%;
 }
 
+.bottuns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backBottun {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
 .priceBottun {
     background-color: green;
     color: white;
