@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from 'gatsby'
 
-import {myLocalStorage} from '../global/helper'
 import styles from './cart.module.css'
+import {myLocalStorage} from '../global/helper'
 import CartItem from '../components/CartItem'
 
 const CartPage = () => {

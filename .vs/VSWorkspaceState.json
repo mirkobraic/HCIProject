@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\modules",
-    "\\src\\modules\\Travel",
-    "\\src\\modules\\Travel\\TravelContainer"
+    "\\src\\modules\\Home\\Blog"
   ],
-  "SelectedNode": "\\src\\modules\\Travel\\TravelContainer\\style.module.css",
+  "SelectedNode": "\\src\\layouts",
   "PreviewInSolutionExplorer": false
 }

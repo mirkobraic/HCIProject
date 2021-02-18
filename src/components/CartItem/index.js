@@ -1,6 +1,6 @@
 import React from 'react'
-import {myLocalStorage} from '../../global/helper'
 
+import {myLocalStorage} from '../../global/helper'
 import styles from "./style.module.css"
 
 const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {

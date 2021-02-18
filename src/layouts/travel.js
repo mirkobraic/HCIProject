@@ -2,6 +2,8 @@ import React from 'react'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
 import {Link} from 'gatsby'
+import { FaUndo } from 'react-icons/fa';
+import {IconContext} from "react-icons"
  
 import styles from './travel.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
@@ -17,7 +19,12 @@ const TravelPost = ({ pageContext }) => {
             <h1>{title}</h1>
             <p className={styles.bottuns}>
                 <Link to={'/travel'}>
-                    <bottun className={styles.backBottun}>Go back</bottun>
+                    <bottun className={styles.backBottun}>
+                        <IconContext.Provider value={{ style: {color: "white"}}}>
+                            <FaUndo />
+                        </IconContext.Provider>
+                        &nbsp;&nbsp;Go back
+                    </bottun>
                 </Link>
                 <bottun className={styles.priceBottun}>Book now from $ {price}</bottun>
             </p>
