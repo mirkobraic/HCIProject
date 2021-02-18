@@ -49,8 +49,6 @@ const BlogContainers = () => {
                   <p className={styles.containerText}>
                       <h3 className={styles.title}>{node.title}</h3>
                       <span>{node.shortInfo.internal.content}</span>
-                      <br/>
-                      <span className={styles.more}> Learn more...</span>
                   </p>
                </li>
               </Link>
