@@ -1,7 +1,8 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
- 
+import {Link} from 'gatsby'
+
 import styles from './blog.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
  
@@ -14,7 +15,12 @@ const BlogPost = ({ pageContext }) => {
         <Img className={styles.blogImage} fixed={image.fixed} />
         <p className={styles.textHalf}>
             <h1>{title}</h1>
-            <span>{author} {date}</span>
+            <p className={styles.underTitle}>
+                <Link to={'/blog'}>
+                    <bottun className={styles.backBottun}>Go back</bottun>
+                </Link>
+                <span>{author} {date}</span>
+            </p>
             <ReactMarkdown children={blogText.internal.content} />
         </p>
       </main>
