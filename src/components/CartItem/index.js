@@ -1,13 +1,14 @@
 import React from 'react'
+import {myLocalStorage} from '../../global/helper'
 
 import styles from "./style.module.css"
 
 const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {
-    const item = JSON.parse(localStorage.getItem(`cartItem-${num}`))
+    const item = JSON.parse(myLocalStorage.getItem(`cartItem-${num}`))
 
     const increment = () => {
         item.quantity = item.quantity + 1
-        localStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
+        myLocalStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
         setUpdate(update => !update)
     }
 
@@ -16,7 +17,7 @@ const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {
             return
         }
         item.quantity = item.quantity - 1
-        localStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
+        myLocalStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
         setUpdate(update => !update)
     }
 
