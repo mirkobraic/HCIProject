@@ -1,35 +1,52 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from 'gatsby'
 
 import styles from './cart.module.css'
 
-const CartPage = () => (
-	<div className={styles.pageContent}>
+import CartItem from '../components/CartItem'
+
+const CartPage = () => {
+	const [update, setUpdate] = useState(false)
+
+	const localStorageKeys = Object.keys(localStorage)
+
+	let cartItems = []
+	localStorageKeys.forEach(key => {
+		if (key.includes('cartItem')) {
+			cartItems.push(JSON.parse(localStorage.getItem(key)))
+		}
+	})
+
+	useEffect(() => {
+        console.log("Updated");
+    }, [update]);
+
+	const totalItemsPrice = cartItems.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+	const shippingCosts = totalItemsPrice * 0.05;
+	const total = totalItemsPrice + shippingCosts;
+
+	return <div className={styles.pageContent}>
 		<h1 className={styles.pageTitle}>Shopping Cart</h1>
 		
-		{/*
-		TODO:
-		product component
-		*/}
-
-		<p>PRODUCT 1</p>
-		<hr className={styles.productSeparator}/>
-		<p>PRODUCT 2</p>
-		<hr className={styles.productSeparator}/>
+		{
+			cartItems
+				.filter(item => item.quantity > 0)
+				.map(item => <CartItem {...item}  key={item.title} setUpdate={setUpdate} update={update} />)
+		}
 
 		<p className={styles.sum}>
 			<span>Subtotal</span>
-			<span> 17.99</span>
+			<span>${parseFloat(totalItemsPrice).toFixed(2)}</span>
 		</p>
 
 		<p className={styles.sum}>
 			<span>Shipping costs</span>
-			<span> 3.99</span>
+			<span>${parseFloat(shippingCosts).toFixed(2)}</span>
 		</p>
 
 		<p className={styles.sum}>
 			<span className={styles.total}>Total</span>
-			<span className={styles.total}> 21.98</span>
+			<span className={styles.total}>${parseFloat(total).toFixed(2)}</span>
 		</p>
 
 		<Link to={'/'}>
@@ -40,6 +57,6 @@ const CartPage = () => (
 			<bottun className={styles.shopButton}>Continue shopping</bottun>
 		</Link>
 	</div>
-)
+}
 
 export default CartPage

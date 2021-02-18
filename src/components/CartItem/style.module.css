@@ -1,0 +1,27 @@
+.cartItemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .cartItemRow {
+        flex-direction: column;
+    }
+}
+
+.cartItemTitle {
+    flex-basis: 50%;
+}
+
+.cartItemRow span {
+    display: inline-block;
+}
+
+.cartItemRow span + span {
+    margin-left: 2rem;
+}
+
+.cartButton {
+    margin-left: .25rem;
+}
