@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\global",
-    "\\src\\modules"
+    "\\src\\modules",
+    "\\src\\modules\\Home\\Blog"
   ],
-  "SelectedNode": "\\src\\global\\global.css",
+  "SelectedNode": "\\src\\layouts",
   "PreviewInSolutionExplorer": false
 }

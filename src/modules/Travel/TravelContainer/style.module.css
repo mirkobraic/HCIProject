@@ -40,12 +40,16 @@
     padding: 10px;
     padding-bottom: 20px;
     height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .priceBottun {
     background-color: green;
     color: white;
     padding: 5px;
+    width: 100px;
 }
 
 

@@ -51,10 +51,10 @@ const TravelContainers = () => {
                 <li>
                   <Img fixed={node.image.fixed} />
                   <p className={styles.containerText}>
-                      <h3 className={styles.title}>{node.title}</h3>
-                      <span>{node.shortInfo.internal.content}</span>
-                      <br/>
-                      <br/>
+                      <p>
+                          <h3 className={styles.title}>{node.title}</h3>
+                          <span>{node.shortInfo.internal.content}</span>
+                      </p>
                       <bottun className={styles.priceBottun}>FROM $ {node.price}</bottun>
                   </p>
                 </li>
