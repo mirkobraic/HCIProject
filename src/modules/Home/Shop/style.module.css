@@ -8,6 +8,11 @@
     color: var(--main-color);
     text-transform: uppercase;
 }
+        .shopContent h1:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: var(--main-color-light);
+        }
 
 .list {
     padding-left: 0;

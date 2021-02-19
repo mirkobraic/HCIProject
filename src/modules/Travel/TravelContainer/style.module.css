@@ -5,6 +5,12 @@
     justify-content: center;
 }
 
+    .container h3:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: var(--main-color-light);
+    }
+
 .list {
     padding-left: 0;
     display: flex;
@@ -34,17 +40,16 @@
     padding: 10px;
     padding-bottom: 20px;
     height: 350px;
-}
-
-.more {
-    color: gray;
-    text-decoration: underline;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .priceBottun {
     background-color: green;
     color: white;
     padding: 5px;
+    width: 100px;
 }
+
+
