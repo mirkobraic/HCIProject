@@ -2,16 +2,16 @@
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    padding-bottom: 1rem;
-    width: 16rem;
-    min-height: 27rem;
-    margin-right: 5rem;
+    padding: 1rem;
+    width: 12rem;
+    height: 20rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
     margin-bottom: 2rem;
 }
 
 .cardImage {
-    height: 15rem;
+    height: 10rem;
 }
 
 .cardContent {

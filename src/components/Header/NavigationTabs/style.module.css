@@ -1,24 +1,41 @@
 .navigationBar {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row;
-    width: 480px;
-  }
+  display: flex;
+}
   
-  .navigationBar li {
-    padding: 5px 15px;
-    list-style: none;
-    width: fit-content;
-    font-size: 20px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: white;
+.navigationBar li {
+  padding: 5px 15px;
+  list-style: none;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navigationBar li:first-child {
+  margin-left: auto;
+}
+.navigationBar li:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.navigationBar .active, .navigationBar .active:hover{
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .navigationBar {
+      position: absolute;
+      flex-direction: column;
+      left: 50%;
+      transform: translateX( -50% );
+      top: 100px;
+      background-color: var(--main-color);
+      padding: 2rem 4rem;
   }
-  .navigationBar li:hover {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
-    cursor: pointer;
+
+  .navigationBar li:first-child {
+    margin-left: 0;
   }
-  
-  .navigationBar .active, .navigationBar .active:hover{
-    border-bottom: 2px solid white;
-  }
+}
