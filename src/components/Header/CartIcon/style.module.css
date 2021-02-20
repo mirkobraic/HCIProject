@@ -1,7 +1,8 @@
+
 .cart {
-    margin: 0px 100px 0px 20px;
+    padding-left: 2rem;
 }
 
-    .cart:hover {
-        cursor: pointer;
-    }
+.cart:hover {
+    cursor: pointer;
+}
