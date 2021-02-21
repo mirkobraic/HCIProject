@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--main-color);
-    padding: 2rem;
+    padding: 2rem 6rem;
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -9,22 +9,22 @@
     justify-content: center;
 }
 
-.footer > * {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    flex-grow: 1;
-}
+    .footer > * {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        flex-grow: 1;
+    }
 
-.footer .terms li{
-    border-bottom: 1px solid var(--main-color);
-}
+    .footer .terms li {
+        border-bottom: 1px solid var(--main-color);
+    }
 
-.footer .terms li:hover{
-    border-bottom:  1px solid white;
-    cursor: pointer;
-}
+    .footer .terms li:hover{
+        border-bottom:  1px solid white;
+        cursor: pointer;
+    }
 
 .title {
     font-size: 28px;
@@ -36,7 +36,7 @@
     color: rgba(0,0,0, 0)
 }
 
-.footer .social {
+.social {
     flex-grow: 0;
     flex-basis: auto;
     margin-right: auto;
@@ -47,7 +47,7 @@
     background-size: cover;
 }
 
-.footer .social:hover {
+.social:hover {
     cursor: pointer;
 }
 

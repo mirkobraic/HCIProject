@@ -6,11 +6,11 @@ import styles from './style.module.css'
 //TODO na pocetku je prikazana navigacija za mobilnu verziju
 const visibility = (isVisible) => {
 
-    if (typeof window !== `undefined` && !isVisible && window.innerWidth < 768) {
+    if (typeof window !== `undefined` && isVisible == false && window.innerWidth < 768) {
         return {display: 'none'}
     }
-    
-    return  {display: 'block'}
+    else
+        return  {display: 'block'}
 }
 
 const Navigation = ({ activeTab, isVisible }) => {

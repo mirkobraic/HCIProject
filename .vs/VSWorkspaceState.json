@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\TitleImage",
-    "\\src\\global",
-    "\\src\\images",
-    "\\src\\layouts",
+    "\\src\\components\\Header",
+    "\\src\\components\\Header\\BurgerMenu",
+    "\\src\\components\\Header\\Navigation",
     "\\src\\modules",
-    "\\src\\pages"
+    "\\src\\modules\\Header",
+    "\\src\\modules\\Home",
+    "\\src\\modules\\Home\\Travel\\HomeTravelContainer"
   ],
-  "SelectedNode": "\\src\\global\\global.css",
+  "SelectedNode": "\\src\\components\\Header\\BurgerMenu\\style.module.css",
   "PreviewInSolutionExplorer": false
 }

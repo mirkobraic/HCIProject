@@ -38,10 +38,10 @@ const ShopItem = ({ pageContext }) => {
             <div className={styles.titleHalf}>
                 <p className={styles.itemPath}>
                     <Link to={'/shop'}>
-                        Shop > 
+                        Shop >&nbsp;
                     </Link>
                     <Link to={'/shop'} state={{category:category}}>
-                        {category} > 
+                        {category} >&nbsp;
                     </Link>
                     {title}
                 </p>

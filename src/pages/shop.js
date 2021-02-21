@@ -89,7 +89,7 @@ const ShopPage = ({location}) => {
       <ShopWrapper>
         <Filter 
           categoryName={categories.find(i => i.name === filteredValues.category)} 
-          handleChange={setFilteredValues} />
+          handleChange={setFilteredValues}/>
         <Search handleChange={setFilteredValues} />
         <ShopItems products={products} />
       </ShopWrapper>

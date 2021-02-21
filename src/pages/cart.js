@@ -25,7 +25,18 @@ const CartPage = () => {
 	const shippingCosts = totalItemsPrice * 0.05;
 	const total = totalItemsPrice + shippingCosts;
 
-	return <div className={styles.pageContent}>
+	if(cartItems.length==0)
+		return <div className={styles.pageContent}>
+		<h1 className={styles.pageTitle}>Shopping Cart</h1>
+		
+		<p>Shopping cart is empty!</p>
+
+		<Link to={'/shop'}>
+			<bottun className={styles.shopButton}>Continue shopping</bottun>
+		</Link>
+	</div>
+
+	return  <div className={styles.pageContent}>
 		<h1 className={styles.pageTitle}>Shopping Cart</h1>
 		
 		{
@@ -57,6 +68,7 @@ const CartPage = () => {
 			<bottun className={styles.shopButton}>Continue shopping</bottun>
 		</Link>
 	</div>
+	
 }
 
 export default CartPage
