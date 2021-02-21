@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {navigate} from 'gatsby'
-import { FaWindowClose } from 'react-icons/fa';
+import { FaWindowClose, FaUser } from 'react-icons/fa';
 import {IconContext} from "react-icons"
 
 import styles from './login.module.css'
@@ -61,6 +61,7 @@ const Login = () => {
       <section className={styles.field}>
         <label htmlFor="username" />
         <input name="username" placeholder="Username..." onChange={e => setUserName(e.target.value)}/>
+        <i class="fa fa-user fa-lg"></i> 
       </section>
 
       <section className={styles.field}>

@@ -2,9 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\components",
+    "\\src\\components\\TitleImage",
+    "\\src\\global",
+    "\\src\\images",
+    "\\src\\layouts",
     "\\src\\modules",
-    "\\src\\modules\\Home\\Blog"
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\layouts",
+  "SelectedNode": "\\src\\global\\global.css",
   "PreviewInSolutionExplorer": false
 }

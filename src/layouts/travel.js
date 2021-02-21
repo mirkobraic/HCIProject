@@ -26,7 +26,9 @@ const TravelPost = ({ pageContext }) => {
                         &nbsp;&nbsp;Go back
                     </bottun>
                 </Link>
-                <bottun className={styles.priceBottun}>Book now from $ {price}</bottun>
+                <Link to={'/travel'}>
+                    <bottun className={styles.priceBottun}>Book now from $ {price}</bottun>
+                </Link>
             </p>
             <p>{shortInfo.internal.content}</p>
             <h1>OVERVIEW</h1>
