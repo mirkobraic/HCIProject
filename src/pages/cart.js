@@ -25,7 +25,7 @@ const CartPage = () => {
 	const shippingCosts = totalItemsPrice * 0.05;
 	const total = totalItemsPrice + shippingCosts;
 
-	if(cartItems.length==0)
+	if(cartItems.length===0)
 		return <div className={styles.pageContent}>
 		<h1 className={styles.pageTitle}>Shopping Cart</h1>
 		

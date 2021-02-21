@@ -4,13 +4,11 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\Header",
-    "\\src\\components\\Header\\BurgerMenu",
     "\\src\\components\\Header\\Navigation",
+    "\\src\\components\\Header\\NavigationTabs",
     "\\src\\modules",
-    "\\src\\modules\\Header",
-    "\\src\\modules\\Home",
-    "\\src\\modules\\Home\\Travel\\HomeTravelContainer"
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\Header\\BurgerMenu\\style.module.css",
+  "SelectedNode": "\\src\\modules\\Contact",
   "PreviewInSolutionExplorer": false
 }
