@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
+import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
+import Alert from 'react-bootstrap/Alert'
  
 import styles from './shop.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
@@ -34,7 +36,15 @@ const ShopItem = ({ pageContext }) => {
         <div className={styles.firstRow}>
             <Img className={styles.itemImage} fixed={image.fixed} />
             <div className={styles.titleHalf}>
-                <p className={styles.itemPath}>Shop > {category} > {title}</p>
+                <p className={styles.itemPath}>
+                    <Link to={'/shop'}>
+                        Shop > 
+                    </Link>
+                    <Link to={'/shop'} state={{category:title}}>
+                    {category} > 
+                    </Link>
+                    {title}
+                </p>
                 <h1>{title}</h1>
                 <p><b>$ {price}</b></p>
                 <p>Rating {rating}</p>

@@ -13,7 +13,7 @@ import ShopWrapper from "../components/ShopWrapper"
 import { categories } from "../constants/const"
 import Search from "../components/Search"
 
-const ShopPage = () => {
+const ShopPage = ({location}) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       allContentfulProduct {
@@ -54,8 +54,14 @@ const ShopPage = () => {
 
   const [products, setProducts] = useState(allProducts);
 
+  let tmp;
+  if (location.state.category)
+    tmp = location.state.category
+  else
+    tmp = ''
+
   const [filteredValues, setFilteredValues] = useForm({
-    category: '',
+    category: tmp,
     product_type: '',
     brand: '',
     price_range: 1000,
