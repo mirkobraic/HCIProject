@@ -2,10 +2,19 @@ import React from 'react'
  
 import NavigationTabs from '../NavigationTabs'
 import styles from './style.module.css'
- 
+
+//TODO na pocetku je prikazana navigacija za mobilnu verziju
+const visibility = (isVisible) => {
+
+    if (typeof window !== `undefined` && !isVisible && window.innerWidth < 768) {
+        return {display: 'none'}
+    }
+    
+    return  {display: 'block'}
+}
 
 const Navigation = ({ activeTab, isVisible }) => {
-    return <section className={styles.navigation} style={!isVisible && window.innerWidth < 768 ? {display: 'none'} : {display: 'block'}}>
+    return <section className={styles.navigation} style={visibility(isVisible)}>
         <NavigationTabs activeTab={activeTab} />
     </section>
 }
