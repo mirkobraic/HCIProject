@@ -3,7 +3,6 @@ import { useLocalStorage } from '../hooks/useLocalStorage'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import Alert from 'react-bootstrap/Alert'
  
 import styles from './shop.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
@@ -18,6 +17,7 @@ const ShopItem = ({ pageContext }) => {
   const handleClick = () => {
     setCartItem({title, price, num, quantity: cartItem.quantity + quantity})
   }
+
 
   const increment = () => {
     setQuantity(quantity => quantity + 1);
@@ -40,8 +40,8 @@ const ShopItem = ({ pageContext }) => {
                     <Link to={'/shop'}>
                         Shop > 
                     </Link>
-                    <Link to={'/shop'} state={{category:title}}>
-                    {category} > 
+                    <Link to={'/shop'} state={{category:category}}>
+                        {category} > 
                     </Link>
                     {title}
                 </p>

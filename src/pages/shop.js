@@ -16,7 +16,7 @@ import Search from "../components/Search"
 const ShopPage = ({location}) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allContentfulProduct {
+      allContentfulProduct (sort: {fields: rating, order: DESC}) {
         nodes {
           price
           productInfo {
