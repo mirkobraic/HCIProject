@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
+
+import Search from '../../../components/Search'
  
 const BlogContainers = () => {
   const data = useStaticQuery(graphql`
@@ -37,11 +39,33 @@ const BlogContainers = () => {
           }
         }
     }`)
+
+    const allCards = data?.allContentfulBlogPost?.nodes ?? [];
+    const [searchTerm, setSearchTerm] = useState('')
+    const [travelCards, setTravelCards] = useState(allCards)
+
+    const handleSearch = (e) => {
+      setSearchTerm(e.target.value)
+    }
+
+    useEffect(() => {
+      updateCards()
+      // eslint-disable-next-line
+    }, [searchTerm])
+  
+    const updateCards = () => {
+      const filteredCards = allCards.filter(card => 
+          (card.title.toLowerCase().includes(searchTerm)) || searchTerm === '')
+        setTravelCards(filteredCards);
+    }
  
     return (
       <section className={styles.container}>
+        <div className={styles.searchWrapper}>
+          <Search handleChange={handleSearch} />
+        </div>
         <ul className={styles.list}>
-          {data.allContentfulBlogPost.nodes.map(node => {
+          {travelCards.map(node => {
             return (
               <Link to={`/blog/${node.num}`}>
                 <li>

@@ -3,6 +3,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
     .container h3:hover {
@@ -53,3 +54,6 @@
 }
 
 
+.searchWrapper {
+    margin-bottom: 2rem;
+}

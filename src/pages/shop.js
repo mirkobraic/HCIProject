@@ -11,6 +11,7 @@ import Filter from "../components/Filter"
 import ShopItems from "../components/ShopItems"
 import ShopWrapper from "../components/ShopWrapper"
 import { categories } from "../constants/const"
+import Search from "../components/Search"
 
 const ShopPage = () => {
   const data = useStaticQuery(graphql`
@@ -57,7 +58,8 @@ const ShopPage = () => {
     category: '',
     product_type: '',
     brand: '',
-    price_range: 1000
+    price_range: 1000,
+    search: '',
   })
 
   useEffect(() => {
@@ -70,7 +72,8 @@ const ShopPage = () => {
         (product.category === filteredValues.category || filteredValues.category === '') &&
         (product.productType === filteredValues.product_type || filteredValues.product_type === '') &&
         (product.brand === filteredValues.brand || filteredValues.brand === '') &&
-        product.price < filteredValues.price_range
+        product.price < filteredValues.price_range &&
+        (product.title.toLowerCase().includes(filteredValues.search) || filteredValues.search === '')
       )
     setProducts(filteredProducts);
   }
@@ -81,6 +84,7 @@ const ShopPage = () => {
         <Filter 
           categoryName={categories.find(i => i.name === filteredValues.category)} 
           handleChange={setFilteredValues} />
+        <Search handleChange={setFilteredValues} />
         <ShopItems products={products} />
       </ShopWrapper>
     </HeaderFooterLayout>
