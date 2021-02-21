@@ -14,7 +14,7 @@ const BlogPost = ({ pageContext }) => {
   return (
     <HeaderFooterLayout  activeTab="Blog">
       <main className={styles.container}>
-        <Img className={styles.blogImage} fixed={image.fixed} />
+        <Img className={styles.blogImage} fluid={image.fluid} />
         <p className={styles.textHalf}>
             <h1>{title}</h1>
             <p className={styles.underTitle}>

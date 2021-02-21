@@ -26,16 +26,15 @@ exports.createPages = async ({ graphql, actions }) => {
         author
         date
         image {
-          fixed(width: 500) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            width
-            height
-            base64
-            aspectRatio
-          }
+            fluid{
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              base64
+              aspectRatio
+              sizes
+            }
         }
       }
     }
@@ -60,15 +59,14 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           time
           image {
-            fixed(width: 500) {
+            fluid{
               src
               srcSet
               srcSetWebp
               srcWebp
-              width
-              height
               base64
               aspectRatio
+              sizes
             }
           }
         }
@@ -86,15 +84,14 @@ exports.createPages = async ({ graphql, actions }) => {
         num
         category
         image {
-            fixed(width: 500) {
+            fluid {
               src
               srcSet
               srcSetWebp
               srcWebp
-              width
-              height
               base64
               aspectRatio
+              sizes
             }
         }
         technicalInfo {

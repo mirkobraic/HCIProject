@@ -34,7 +34,7 @@ const ShopItem = ({ pageContext }) => {
     <HeaderFooterLayout  activeTab="Shop">
       <section className={styles.container}>
         <div className={styles.firstRow}>
-            <Img className={styles.itemImage} fixed={image.fixed} />
+            <Img className={styles.itemImage} fluid={image.fluid} />
             <div className={styles.titleHalf}>
                 <p className={styles.itemPath}>
                     <Link to={'/shop'}>

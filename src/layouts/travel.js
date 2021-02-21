@@ -14,7 +14,7 @@ const TravelPost = ({ pageContext }) => {
   return (
     <HeaderFooterLayout  activeTab="Travel">
       <main className={styles.container}>
-        <Img className={styles.travelImage} fixed={image.fixed} />
+        <Img className={styles.travelImage} fluid={image.fluid} />
         <p className={styles.textHalf}>
             <h1>{title}</h1>
             <p className={styles.bottuns}>

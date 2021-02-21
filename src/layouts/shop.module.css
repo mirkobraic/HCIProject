@@ -17,16 +17,19 @@
 .firstRow {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+    margin-left: 0px;
 }
 
 .titleHalf {
     display: flex;
     flex-flow: column;
+    justify-content: center;
     padding-left: 20px;
+    width: 400px;
 }
-
 
 .itemPath {
     color: gray;
@@ -39,7 +42,7 @@
 .itemImage {
     margin: auto;
     margin-top: 20px;
-    width: 60%;
+    width: 30vw;
     border: 1px solid rgba(0,0,0,0.2);
 }
 
