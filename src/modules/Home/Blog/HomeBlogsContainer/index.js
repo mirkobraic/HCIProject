@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 
-import Search from '../../../../components/Search'
  
 const BlogContainers = () => {
   const data = useStaticQuery(graphql`
