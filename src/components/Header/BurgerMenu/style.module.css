@@ -19,15 +19,6 @@
         cursor: pointer;
     }
 
-/*
-.burgerBar {
-    height: 2px;
-    width: 100%;
-    background-color: #FFFFFF;
-    border-radius: 3rem;
-    padding: 2px;
-    margin: 3px;
-}*/
 .burgerBar {
     height: 90px;
     width: 100%;
