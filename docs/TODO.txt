@@ -1,6 +1,5 @@
 Navigation
 - problem sa visibilityem navigacije (5)
-- navigacija css(4)
 - dodat indikator da su proizvodi u kosarici (2)
 
 Shop
@@ -11,7 +10,7 @@ Shop
 - dodat alert da je proizvod dodan u kosaricu (4)
 - omogucit brisanje proizvoda iz kosarice (3)
 - dodat sortiranje (2)
-- proizvodi rapoređeni na više stranica (2)
+- proizvodi rapoređeni na više stranica (2) - placeholder 
 
 Contact
 - responzivnost (3)
