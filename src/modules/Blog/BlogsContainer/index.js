@@ -4,7 +4,8 @@ import Img from 'gatsby-image'
 import styles from './style.module.css'
 
 import Search from '../../../components/Search'
- 
+import PageNumber from "../../../components/PageNumber"
+
 const BlogContainers = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -79,6 +80,7 @@ const BlogContainers = () => {
             )
           })}
         </ul>
+        <PageNumber/>
       </section>
   )
 }

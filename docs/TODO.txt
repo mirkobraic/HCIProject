@@ -9,8 +9,8 @@ Shop
 - kad se stisne na kategoriju u home ne prikazuje se ime kategorije u filteru (4)
 - dodat alert da je proizvod dodan u kosaricu (4)
 - omogucit brisanje proizvoda iz kosarice (3)
-- dodat sortiranje (2)
-- proizvodi rapoređeni na više stranica (2) - placeholder 
+- dodat sortiranje - placeholder?(2)
+- proizvodi rapoređeni na više stranica (2) - dodan placeholder
 
 Contact
 - responzivnost (3)

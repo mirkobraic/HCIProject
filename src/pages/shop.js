@@ -56,7 +56,7 @@ const ShopPage = ({location}) => {
 
   //TODO prikaz u kojoj smo kategoriji
   let tmp = ''
-  if (typeof location.state.category !== 'undefined' ){
+  if (typeof location.state !== 'undefined' && typeof location.state.category !== 'undefined' ){
     tmp = location.state.category
   }
 

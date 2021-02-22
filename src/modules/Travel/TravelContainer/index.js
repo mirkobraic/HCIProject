@@ -3,6 +3,7 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 
 import Search from '../../../components/Search'
+import PageNumber from "../../../components/PageNumber"
 
 import styles from './style.module.css'
  
@@ -87,6 +88,7 @@ const TravelContainers = () => {
             )
           })}
         </ul>
+        <PageNumber/>
       </section>
   )
 }
