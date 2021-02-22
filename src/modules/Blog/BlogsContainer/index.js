@@ -3,7 +3,9 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 
+
 import Search from '../../../components/Search'
+import SortBlog from "../../../components/SortBlog"
 import PageNumber from "../../../components/PageNumber"
 
 const BlogContainers = () => {
@@ -64,6 +66,9 @@ const BlogContainers = () => {
       <section className={styles.container}>
         <div className={styles.searchWrapper}>
           <Search handleChange={handleSearch} />
+        </div>
+        <div className={styles.sort}>
+          <SortBlog handleChange={handleSearch} />
         </div>
         <ul className={styles.list}>
           {travelCards.map(node => {

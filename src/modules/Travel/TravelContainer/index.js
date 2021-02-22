@@ -3,6 +3,8 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 
 import Search from '../../../components/Search'
+
+import SortTravel from "../../../components/SortTravel"
 import PageNumber from "../../../components/PageNumber"
 
 import styles from './style.module.css'
@@ -69,6 +71,9 @@ const TravelContainers = () => {
       <section className={styles.container}>
         <div className={styles.searchWrapper}>
           <Search handleChange={handleSearch} />
+        </div>
+        <div className={styles.sort}>
+          <SortTravel handleChange={handleSearch} />
         </div>
         <ul className={styles.list}>
           {travelCards.map(node => {

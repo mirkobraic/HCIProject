@@ -13,7 +13,17 @@ export const categories = [
     {name: "Surfing", productTypes: ["Kiteboard", "Windsurf", "Wakeboard", "Wetsuits", "Shoes"], brands: ["Crazyfly", "Quicksliver", "Ion"]}
 ]
 
-export const sortCriteria = [
+export const sortCriteriaShop = [
     {name: "Name"}, 
     {name: "Price"}
+]
+
+export const sortCriteriaTravel = [
+    {name: "Name"}, 
+    {name: "Date"}, 
+    {name: "Duration"}
+]
+
+export const sortCriteriaBlog = [
+    {name: "Title"}
 ]

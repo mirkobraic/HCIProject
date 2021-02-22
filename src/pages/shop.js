@@ -12,7 +12,7 @@ import ShopItems from "../components/ShopItems"
 import ShopWrapper from "../components/ShopWrapper"
 import { categories } from "../constants/const"
 import Search from "../components/Search"
-import Sort from "../components/Sort"
+import SortShop from "../components/SortShop"
 
 const ShopPage = ({location}) => {
   const data = useStaticQuery(graphql`
@@ -93,7 +93,7 @@ const ShopPage = ({location}) => {
           categoryName={categories.find(i => i.name === filteredValues.category)} 
           handleChange={setFilteredValues} />
         <Search handleChange={setFilteredValues} />
-        <Sort handleChange={setFilteredValues} />
+        <SortShop handleChange={setFilteredValues} />
         <ShopItems products={products} />
       </ShopWrapper>
     </HeaderFooterLayout>
