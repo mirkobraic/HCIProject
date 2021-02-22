@@ -64,12 +64,10 @@ const BlogContainers = () => {
  
     return (
       <section className={styles.container}>
-        <div className={styles.searchWrapper}>
+        <p className={styles.searchWrapper}>
           <Search handleChange={handleSearch} />
-        </div>
-        <div className={styles.sort}>
           <SortBlog handleChange={handleSearch} />
-        </div>
+        </p>
         <ul className={styles.list}>
           {travelCards.map(node => {
             return (

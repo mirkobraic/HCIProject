@@ -3,7 +3,8 @@
 }
 
 .searchCard {
-
+    border: none;
+    background-color: var(--background-gray);
 }
 
 .searchLabel {
@@ -11,5 +12,7 @@
 }
 
 .searchInput {
-    
+    border: none;
+    background-color: var(--background-gray);
 }
+

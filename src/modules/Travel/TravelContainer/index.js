@@ -71,8 +71,6 @@ const TravelContainers = () => {
       <section className={styles.container}>
         <div className={styles.searchWrapper}>
           <Search handleChange={handleSearch} />
-        </div>
-        <div className={styles.sort}>
           <SortTravel handleChange={handleSearch} />
         </div>
         <ul className={styles.list}>

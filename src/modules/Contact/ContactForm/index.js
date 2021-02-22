@@ -4,6 +4,7 @@ import styles from './style.module.css';
  
 const ContactForm = () => (
     <main className={styles.contactForm}>
+        
         <section className={styles.form}>
             <h2 className={styles.title}>Send us a message</h2>
             <form>

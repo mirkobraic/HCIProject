@@ -47,5 +47,9 @@
 }
 
 .searchWrapper {
-    margin-bottom: 2rem;
+	width: 84%;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
