@@ -5,6 +5,10 @@
 	justify-content: center;
 }
 
+	.container h3 {
+		margin-top: 0;
+	}
+
 	.container h3:hover {
 		cursor: pointer;
 		text-decoration: underline;
@@ -39,6 +43,7 @@
 	background-color: ghostwhite;
 	padding: 10px;
 	height: 275px;
+	margin-top: 0;
 }
 
 .searchWrapper {

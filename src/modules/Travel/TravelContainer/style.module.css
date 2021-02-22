@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+    .container h3 {
+        margin-top: 0;
+    }
+
+
     .container h3:hover {
         cursor: pointer;
         text-decoration: underline;
@@ -39,6 +44,7 @@
     background-color: ghostwhite;
     padding: 10px;
     padding-bottom: 20px;
+    margin-top: 0;
     height: 350px;
     display: flex;
     flex-direction: column;

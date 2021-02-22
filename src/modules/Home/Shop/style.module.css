@@ -14,10 +14,6 @@
             text-decoration-color: var(--main-color-light);
         }
 
-.arrowIcon {
-    padding-top: 10px;
-    border: 3px solid red;
-}
 .list {
     padding-left: 0;
     display: flex;

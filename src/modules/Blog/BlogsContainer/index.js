@@ -77,8 +77,10 @@ const BlogContainers = () => {
                 <li>
                   <Img fixed={node.image.fixed} />
                   <p className={styles.containerText}>
+                      <p>
                       <h3 className={styles.title}>{node.title}</h3>
                       <span>{node.shortInfo.internal.content}</span>
+                      </p>
                   </p>
                </li>
               </Link>
