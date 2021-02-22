@@ -19,6 +19,7 @@
         cursor: pointer;
     }
 
+/*
 .burgerBar {
     height: 2px;
     width: 100%;
@@ -26,8 +27,12 @@
     border-radius: 3rem;
     padding: 2px;
     margin: 3px;
+}*/
+.burgerBar {
+    height: 90px;
+    width: 100%;
+    color: white;
 }
-
 
 
 @media (min-width: 768px) {
