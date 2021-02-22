@@ -1,6 +1,7 @@
 Navigation
 - problem sa visibilityem navigacije (5)
 - dodat indikator da su proizvodi u kosarici (2)
+- maknut logo, na njegovo misto stavit burger bar, u desni kantun kosaricu
 
 Shop
 - fix problem sa localStorage-om za kosaricu (5)

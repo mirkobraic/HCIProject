@@ -3,12 +3,12 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\CartItem",
-    "\\src\\components\\Header",
-    "\\src\\global",
+    "\\src\\images",
     "\\src\\modules",
-    "\\src\\modules\\Home\\Shop"
+    "\\src\\modules\\Home\\Blog",
+    "\\src\\modules\\Home\\Blog\\HomeBlogsContainer",
+    "\\src\\modules\\Home\\PageContent"
   ],
-  "SelectedNode": "\\src\\global\\helper.js",
+  "SelectedNode": "\\src\\images\\favicon.png",
   "PreviewInSolutionExplorer": false
 }

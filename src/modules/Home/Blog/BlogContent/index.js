@@ -1,5 +1,8 @@
 import React from "react"
 import { Link } from 'gatsby'
+import { FaAngleDoubleRight } from 'react-icons/fa';
+import {IconContext} from "react-icons"
+
 
 import styles from './style.module.css'
 import HomeBlogsContainer from '../HomeBlogsContainer'
@@ -7,7 +10,12 @@ import HomeBlogsContainer from '../HomeBlogsContainer'
 const BlogContent = () => (
 	<section className={styles.blogContent}>
 		<Link to={'/blog'}>
-			<h1>Blog >></h1>
+			<h1>
+				Blog&nbsp;
+				<IconContext.Provider value={{style: {'padding-top': "10px"}}}>
+					<FaAngleDoubleRight />
+				</IconContext.Provider>
+			</h1>
 		</Link>
 		<HomeBlogsContainer />
 	</section>)
