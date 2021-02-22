@@ -26,7 +26,7 @@ const NavigationBar = ({ activeTab }) => (
         </Link>
 
         <Link to={'/cart'}>
-            <Cart />
+            <Cart/>
         </Link>
 
     </nav>
