@@ -5,3 +5,25 @@ export const navs = [
     {tab: 'Blog', to: '/blog'},
     {tab: 'Contact', to: '/contact'}
 ]
+
+export const categories = [
+    {name: "Snowboarding", productTypes: ["Boards", "Bindings", "Boots", "Helmets", "Goggles", "Jackets", "Pants", "Gloves"], brands: ["Burton", "Capita", "DC", "GNU", "Jones", "Lib Tech", "Nitro"]}, 
+    {name: "Kayaking", productTypes: ["Kayaks", "Paddles", "Spraydecks", "Buoyancy aids", "Helmets", "Drysuits"], brands: ["Dagger", "Pyranha", "Jackson", "Islander", "Palm", "Astral", "Werner"]},
+    {name: "Mountain Biking", productTypes: ["Bikes", "Equipment", "Parts"], brands: ["Specialized", "Trek Bikes", "Santa Cruz", "Giant Bicycles"]},
+    {name: "Surfing", productTypes: ["Kiteboard", "Windsurf", "Wakeboard", "Wetsuits", "Shoes"], brands: ["Crazyfly", "Quicksliver", "Ion"]}
+]
+
+export const sortCriteriaShop = [
+    {name: "Name"}, 
+    {name: "Price"}
+]
+
+export const sortCriteriaTravel = [
+    {name: "Name"}, 
+    {name: "Date"}, 
+    {name: "Duration"}
+]
+
+export const sortCriteriaBlog = [
+    {name: "Title"}
+]

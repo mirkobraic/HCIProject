@@ -23,6 +23,7 @@ const Login = () => {
   const [error, setError] = useState(false)
   const [loading, setLoading] = useState(false)
 
+
   const submit = () => {
     setError(false)
     setLoading(true)
@@ -60,6 +61,7 @@ const Login = () => {
       <section className={styles.field}>
         <label htmlFor="username" />
         <input name="username" placeholder="Username..." onChange={e => setUserName(e.target.value)}/>
+        <i class="fa fa-user fa-lg"></i> 
       </section>
 
       <section className={styles.field}>

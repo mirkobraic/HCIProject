@@ -21,7 +21,7 @@ import styles from './style.module.css'
         </ul>
         <ul className={styles.phone}>
             <li className={styles.title}>
-                ...
+                Phone
             </li>
             <li>Tel. 1-719-6700</li>
             <li>Toll Free 1-800-692-7628</li>

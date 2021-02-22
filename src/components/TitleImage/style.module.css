@@ -22,5 +22,12 @@
 
     .titleImage h1 {
         font-size: 80px;
-        text-shadow: 0 0 20px var(--main-color);
+        text-shadow: 0 0 20px white;
+        color: var(--main-color);
     }
+
+@media (max-width: 768px) {
+    .titleImage h1 {
+        font-size: 60px;
+    }
+}

@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <h2>Ayy... nothing here!</h2>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     <Link to={'/'}>
-        <button className={styles.homeButton}>Home     >></button>
+        <button className={styles.homeButton}>Home</button>
     </Link>
   </div>
 )

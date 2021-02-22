@@ -32,9 +32,23 @@ html {
     display: block;
   }
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-  :root {
+  ul {
+    margin: 0;
+    padding-inline-start: 0;
+  }
+
+:root {
     --main-color: rgb(0, 102, 204);
     --main-color-light: rgba(0, 102, 204, 0.3);
-    --accent-color:  rgb(0, 0, 102);
-  }
+    --accent-color: rgb(0, 0, 102);
+    --background-gray: rgb(230, 230, 230);
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

@@ -1,0 +1,40 @@
+.pageContent {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pageTitle {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.productSeparator {
+    color: lightgray;
+}
+
+.sum {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.shopButton {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: lightgray;
+}
+
+.homeButton {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: var(--main-color);
+}

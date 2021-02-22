@@ -1,0 +1,42 @@
+.container {
+    margin-top: 90px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    padding: 0 100px;
+}
+
+    .container h1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--main-color);
+    }
+
+.textHalf {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.textHalf span {
+    font-size: 14px;
+    color: gray;
+}
+
+.blogImage {
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.underTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backBottun {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}

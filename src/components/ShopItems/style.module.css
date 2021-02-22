@@ -1,0 +1,4 @@
+.shopItemsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

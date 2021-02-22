@@ -1,21 +1,15 @@
-.ShopCategory {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px auto;
-    width: 90vw;
+.container {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.imageHalf div {
+.imageHalf{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.imageHalf {
-    padding: 0px 50px;
+.categoryTitle{
+    margin: 0 auto;
+    text-align:center;
 }
-
-.categoryTitle div {
-    align-items: center;
-}
-
-
-

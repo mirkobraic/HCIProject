@@ -1,0 +1,7 @@
+.cart {
+    padding-left: 1rem;
+}
+
+.cart:hover {
+    cursor: pointer;
+}

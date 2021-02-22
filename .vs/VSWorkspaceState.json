@@ -3,9 +3,12 @@
     "",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\CartItem",
+    "\\src\\components\\Header",
+    "\\src\\global",
     "\\src\\modules",
-    "\\src\\pages"
+    "\\src\\modules\\Home\\Shop"
   ],
-  "SelectedNode": "\\src\\pages\\login.module.css",
+  "SelectedNode": "\\src\\global\\helper.js",
   "PreviewInSolutionExplorer": false
 }

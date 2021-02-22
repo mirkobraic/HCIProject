@@ -1,31 +1,30 @@
 .footer {
     background-color: var(--main-color);
-    padding: 20px 150px;
+    padding: 2rem 6rem;
     display: flex;
+    flex-wrap: wrap;
     color: white;
     font-size: 16px;
     align-items: center;
     justify-content: center;
 }
 
-    .footer .terms, .address, .phone {
+    .footer > * {
         list-style: none;
         display: flex;
-        flex-flow: column;
-        padding-right: 50px;
+        flex-direction: column;
+        padding: 1rem;
+        flex-grow: 1;
     }
 
+    .footer .terms li {
+        border-bottom: 1px solid var(--main-color);
+    }
 
-        .footer .terms li{
-            border-bottom: 1px solid var(--main-color);
-        }
-
-        .footer .terms li:hover{
-            border-bottom:  1px solid white;
-            cursor: pointer;
-        }
-
-
+    .footer .terms li:hover{
+        border-bottom:  1px solid white;
+        cursor: pointer;
+    }
 
 .title {
     font-size: 28px;
@@ -33,23 +32,23 @@
     margin-top: 10px;
 }
 
-.phone {
-    margin: 11px 0;
+.phone .title {
+    color: rgba(0,0,0, 0)
 }
 
-    .phone .title {
-        color: rgba(0,0,0, 0)
-    }
-
-.footer .social {
-    padding: 150px;
-    position: relative;
+.social {
+    flex-grow: 0;
+    flex-basis: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    justify-self: flex-start;
     background: url("https://i.pinimg.com/originals/48/52/a5/4852a5cb7f4ad9a76365651cc3fa440c.png") no-repeat center center;
     background-size: cover;
 }
 
-    .footer .social:hover {
-        cursor: pointer;
-    }
+.social:hover {
+    cursor: pointer;
+}
 
 

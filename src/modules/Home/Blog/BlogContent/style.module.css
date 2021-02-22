@@ -1,0 +1,13 @@
+.blogContent h1 {
+    font-size: 50px;
+    margin-bottom: 45px;
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.blogContent h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--main-color-light);
+}

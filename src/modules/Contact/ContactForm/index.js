@@ -1,5 +1,5 @@
-import React from 'react'
- 
+import React, { useState } from 'react'
+
 import styles from './style.module.css';
  
 const ContactForm = () => (
@@ -27,10 +27,10 @@ const ContactForm = () => (
                     <label htmlFor="message"/>
                     <input name="message" type="text" placeholder="Message.."/>
                 </div>
-                <button>Submit</button>
+                <button onClick={() => alert('Your message is sent!')}>Submit</button>
             </form>
         </section>
     </main>
 )
- 
+
 export default ContactForm
