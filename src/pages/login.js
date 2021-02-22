@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {navigate} from 'gatsby'
-import { FaWindowClose, FaUser } from 'react-icons/fa';
+import { FaWindowClose } from 'react-icons/fa';
 import {IconContext} from "react-icons"
 
 import styles from './login.module.css'

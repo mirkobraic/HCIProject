@@ -12,3 +12,8 @@ export const categories = [
     {name: "Mountain Biking", productTypes: ["Bikes", "Equipment", "Parts"], brands: ["Specialized", "Trek Bikes", "Santa Cruz", "Giant Bicycles"]},
     {name: "Surfing", productTypes: ["Kiteboard", "Windsurf", "Wakeboard", "Wetsuits", "Shoes"], brands: ["Crazyfly", "Quicksliver", "Ion"]}
 ]
+
+export const sortCriteria = [
+    {name: "Name"}, 
+    {name: "Price"}
+]

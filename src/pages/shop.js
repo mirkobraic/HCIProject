@@ -12,6 +12,7 @@ import ShopItems from "../components/ShopItems"
 import ShopWrapper from "../components/ShopWrapper"
 import { categories } from "../constants/const"
 import Search from "../components/Search"
+import Sort from "../components/Sort"
 
 const ShopPage = ({location}) => {
   const data = useStaticQuery(graphql`
@@ -54,9 +55,10 @@ const ShopPage = ({location}) => {
 
   const [products, setProducts] = useState(allProducts);
 
+
   //TODO prikaz u kojoj smo kategoriji
   let tmp = ''
-  if (typeof location.state !== 'undefined' && typeof location.state.category !== 'undefined' ){
+  if (typeof location.state !== 'undefined' && location.state !== null && typeof location.state.category !== 'undefined' ){
     tmp = location.state.category
   }
 
@@ -91,6 +93,7 @@ const ShopPage = ({location}) => {
           categoryName={categories.find(i => i.name === filteredValues.category)} 
           handleChange={setFilteredValues} />
         <Search handleChange={setFilteredValues} />
+        <Sort handleChange={setFilteredValues} />
         <ShopItems products={products} />
       </ShopWrapper>
     </HeaderFooterLayout>
