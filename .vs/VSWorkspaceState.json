@@ -3,12 +3,12 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Header",
     "\\src\\components\\Header\\Navigation",
     "\\src\\components\\Header\\NavigationTabs",
+    "\\src\\components\\ShopCategory",
     "\\src\\modules",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\modules\\Contact",
+  "SelectedNode": "\\src\\pages\\shop.js",
   "PreviewInSolutionExplorer": false
 }

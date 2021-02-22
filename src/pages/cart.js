@@ -31,7 +31,7 @@ const CartPage = () => {
 		
 		<p>Shopping cart is empty!</p>
 
-		<Link to={'/shop'}>
+		<Link to={'/shop'} >
 			<bottun className={styles.shopButton}>Continue shopping</bottun>
 		</Link>
 	</div>
@@ -64,7 +64,7 @@ const CartPage = () => {
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
-		<Link to={'/shop'}>
+		<Link to={'/shop'} >
 			<bottun className={styles.shopButton}>Continue shopping</bottun>
 		</Link>
 	</div>

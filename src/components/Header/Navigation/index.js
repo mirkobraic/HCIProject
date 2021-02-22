@@ -6,7 +6,7 @@ import styles from './style.module.css'
 //TODO na pocetku je prikazana navigacija za mobilnu verziju
 const visibility = (isVisible) => {
 
-    if (typeof window !== `undefined` && isVisible == false && window.innerWidth < 768) {
+    if (typeof window !== `undefined` && isVisible === true && window.innerWidth < 768) {
         return {display: 'none'}
     }
     else

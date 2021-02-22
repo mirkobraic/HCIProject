@@ -48,17 +48,17 @@ const ShopPage = ({location}) => {
         }
       }
     }
-    `)
-  
+   `)
+
   const allProducts = data?.allContentfulProduct?.nodes ?? [];
 
   const [products, setProducts] = useState(allProducts);
 
-  let tmp;
-  if (location.state.category)
+  //TODO prikaz u kojoj smo kategoriji
+  let tmp = ''
+  if (typeof location.state.category !== 'undefined' ){
     tmp = location.state.category
-  else
-    tmp = ''
+  }
 
   const [filteredValues, setFilteredValues] = useForm({
     category: tmp,
@@ -67,7 +67,7 @@ const ShopPage = ({location}) => {
     price_range: 1000,
     search: '',
   })
-
+   
   useEffect(() => {
     updateProducts()
     // eslint-disable-next-line
@@ -89,7 +89,7 @@ const ShopPage = ({location}) => {
       <ShopWrapper>
         <Filter 
           categoryName={categories.find(i => i.name === filteredValues.category)} 
-          handleChange={setFilteredValues}/>
+          handleChange={setFilteredValues} />
         <Search handleChange={setFilteredValues} />
         <ShopItems products={products} />
       </ShopWrapper>
