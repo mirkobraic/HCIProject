@@ -58,7 +58,7 @@
 
 .contactForm button {
     width: 40%;
-    padding: 10px 40px;
+    padding: 10px;
     margin: 15px 0 15px auto;
     border: none;
     background-color: var(--main-color);
