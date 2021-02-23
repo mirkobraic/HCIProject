@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { FaSearch } from 'react-icons/fa';
+import {IconContext} from "react-icons"
+
 
 import styles from './style.module.css';
  

@@ -3,12 +3,12 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\images",
+    "\\src\\components\\Search",
     "\\src\\modules",
-    "\\src\\modules\\Home\\Blog",
-    "\\src\\modules\\Home\\Blog\\HomeBlogsContainer",
-    "\\src\\modules\\Home\\PageContent"
+    "\\src\\modules\\Contact",
+    "\\src\\modules\\Contact\\ContactForm",
+    "\\src\\modules\\Travel\\TravelContainer"
   ],
-  "SelectedNode": "\\src\\images\\favicon.png",
+  "SelectedNode": "\\src\\components\\Search\\index.js",
   "PreviewInSolutionExplorer": false
 }

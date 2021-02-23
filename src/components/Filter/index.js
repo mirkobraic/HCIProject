@@ -77,8 +77,8 @@ const Filter = ({ categoryName, handleChange }) => {
             </label>
             <div className={styles.filterRange}>
               <span>0</span>
-              <input type="range" defaultValue={1000} name="price_range" min={0} max={1000} onChange={handleChange}  />
-              <span>1000</span>
+              <input type="range" defaultValue={1500} name="price_range" min={0} max={1500} onChange={handleChange}  />
+              <span>1500</span>
             </div>
           </fieldset>
       </div>

@@ -66,7 +66,7 @@ const ShopPage = ({location}) => {
     category: tmp,
     product_type: '',
     brand: '',
-    price_range: 1000,
+    price_range: 1500,
     search: '',
   })
    
