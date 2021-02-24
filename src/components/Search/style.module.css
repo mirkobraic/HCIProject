@@ -1,10 +1,14 @@
 .search {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256.61px;
 }
 
 .searchCard {
     border: none;
     background-color: var(--background-gray);
+    width: 100%;
 }
 
 .searchLabel {
@@ -16,3 +20,9 @@
     background-color: var(--background-gray);
 }
 
+
+@media screen and (max-width: 626px) {
+    .search {
+        margin-bottom: 32px;
+    }
+}

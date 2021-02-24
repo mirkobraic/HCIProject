@@ -5,8 +5,65 @@
     border: 1px solid #000;
     flex-basis: 15%;
     text-align: center;
-    margin-bottom: 2rem;
     height: fit-content;
+    position: relative;
+    left: 12%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1750px) {
+    .shopFilter {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .shopFilter {
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .shopFilter {
+        left: 6%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .shopFilter {
+        left: 4%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .shopFilter {
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .shopFilter {
+        left: 1%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .shopFilter {
+        left: 0.5%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .shopFilter {
+        left: -0.5%;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .shopFilter {
+        left: 0;
+    }
 }
 
 .filterTitle {
