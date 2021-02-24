@@ -2,18 +2,17 @@ import React, { useState, useEffect } from "react"
 import { Link } from 'gatsby'
 
 import styles from './cart.module.css'
-import {myLocalStorage} from '../global/helper'
 import CartItem from '../components/CartItem'
 
 const CartPage = () => {
 	const [update, setUpdate] = useState(false)
 
-	const myLocalStorageKeys = Object.keys(myLocalStorage)
+	const localStorageKeys = Object.keys(localStorage)
 
 	let cartItems = []
-	myLocalStorageKeys.forEach(key => {
+	localStorageKeys.forEach(key => {
 		if (key.includes('cartItem')) {
-			cartItems.push(JSON.parse(myLocalStorage.getItem(key)))
+			cartItems.push(JSON.parse(localStorage.getItem(key)))
 		}
 	})
 

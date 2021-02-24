@@ -4,7 +4,6 @@ import { FaWindowClose } from 'react-icons/fa';
 import {IconContext} from "react-icons"
 
 import styles from './login.module.css'
-import {myLocalStorage} from '../global/helper'
 
 const users = [
 {
@@ -31,7 +30,7 @@ const Login = () => {
       const loginSuccessful = !!users.find(user => user.username === username && user.password === password)
       setLoading(false)
       if (loginSuccessful) {
-        myLocalStorage.setItem("loggedIn", username)
+        localStorage.setItem("loggedIn", username)
         setError('Success')
         return navigate('/')
       }
