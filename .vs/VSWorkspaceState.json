@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\modules",
-    "\\src\\modules\\Blog\\BlogsContainer",
-    "\\src\\modules\\Contact\\ContactForm",
     "\\src\\modules\\Home",
     "\\src\\modules\\Home\\Blog",
+    "\\src\\modules\\Home\\Blog\\BlogContent",
     "\\src\\modules\\Home\\Blog\\HomeBlogsContainer",
     "\\src\\modules\\Home\\Travel",
-    "\\src\\pages"
+    "\\src\\modules\\Home\\Travel\\HomeTravelContainer",
+    "\\src\\modules\\Home\\Travel\\TravelContent"
   ],
-  "SelectedNode": "\\src\\modules\\Home\\Blog\\HomeBlogsContainer\\index.js",
+  "SelectedNode": "\\src\\modules\\Home\\Travel\\HomeTravelContainer\\style.module.css",
   "PreviewInSolutionExplorer": false
 }
