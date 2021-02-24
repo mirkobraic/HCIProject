@@ -57,7 +57,7 @@ const CartPage = () => {
 			<span className={styles.total}>${parseFloat(total).toFixed(2)}</span>
 		</p>
 
-		<Link to={'/'}>
+		<Link to={'/notimplemented'}>
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
