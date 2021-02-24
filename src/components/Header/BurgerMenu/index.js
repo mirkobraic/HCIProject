@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import { slide as Menu } from "react-burger-menu"
@@ -6,7 +6,7 @@ import OutsideClickHandler from 'react-outside-click-handler'
 import { navs as navigationTabs } from '../../../constants/const'
 import Cart from '../CartIcon'
 
-import burgerStyles from "./burgerMenuStyle.css"
+//import burgerStyles from "./burgerMenuStyle.css"
 import styles from './style.module.css'
 
 const BurgerMenu = () => {

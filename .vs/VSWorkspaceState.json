@@ -2,13 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\Search",
     "\\src\\modules",
-    "\\src\\modules\\Contact",
+    "\\src\\modules\\Blog\\BlogsContainer",
     "\\src\\modules\\Contact\\ContactForm",
-    "\\src\\modules\\Travel\\TravelContainer"
+    "\\src\\modules\\Home",
+    "\\src\\modules\\Home\\Blog",
+    "\\src\\modules\\Home\\Blog\\HomeBlogsContainer",
+    "\\src\\modules\\Home\\Travel",
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\Search\\index.js",
+  "SelectedNode": "\\src\\modules\\Home\\Blog\\HomeBlogsContainer\\index.js",
   "PreviewInSolutionExplorer": false
 }
