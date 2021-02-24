@@ -9,5 +9,7 @@
 .blogContent h1:hover {
     cursor: pointer;
     text-decoration: underline;
-    text-decoration-color: var(--main-color-light);
+    text-decoration-color: var(--main-color);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
 }

@@ -1,13 +1,15 @@
 .travelContent h1 {
     font-size: 50px;
-    margin-bottom: 45px;
+    
     text-align: center;
     color: var(--main-color);
     text-transform: uppercase;
 }
 
-    .travelContent h1:hover {
-        cursor: pointer;
-        text-decoration: underline;
-        text-decoration-color: var(--main-color-light);
-    }
+.travelContent h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+}
