@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     color: white;
-    background-color: lightgray;
+    background-color: rgb(160, 160, 160);
 }
 
 .homeButton {

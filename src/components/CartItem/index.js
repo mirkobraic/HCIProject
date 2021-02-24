@@ -12,7 +12,7 @@ const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {
     }
 
     const decrement = () => {
-        if (item.quantity === 1) {
+        if (item.quantity === 0) {
             return
         }
         item.quantity = item.quantity - 1
