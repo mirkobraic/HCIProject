@@ -32,14 +32,14 @@ const Login = () => {
       if (loginSuccessful) {
         localStorage.setItem("loggedIn", username)
         setError('Success')
-        return navigate('/')
+        return navigate(-1)
       }
         setError('Wrong username or password')
     }, 2000)
   }
 
     const closing = () => {
-        return navigate('/')
+        return navigate(-1)
   }
   
   return (

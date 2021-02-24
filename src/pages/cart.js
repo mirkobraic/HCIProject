@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 
 import styles from './cart.module.css'
 import CartItem from '../components/CartItem'
@@ -30,9 +30,7 @@ const CartPage = () => {
 		
 		<p>Shopping cart is empty!</p>
 
-		<Link to={'/shop'} >
-			<bottun className={styles.shopButton}>Continue shopping</bottun>
-		</Link>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 
 	return  <div className={styles.pageContent}>
@@ -63,9 +61,7 @@ const CartPage = () => {
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
-		<Link to={'/shop'} >
-			<bottun className={styles.shopButton}>Continue shopping</bottun>
-		</Link>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 	
 }
