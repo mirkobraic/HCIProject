@@ -1,7 +1,5 @@
 Navigation
-- problem sa visibilityem navigacije (5)
 - dodat indikator da su proizvodi u kosarici (2)
-- maknut logo, na njegovo misto stavit burger bar, u desni kantun kosaricu
 
 Shop
 - fix problem sa localStorage-om za kosaricu (5)
@@ -10,12 +8,6 @@ Shop
 - kad se stisne na kategoriju u home ne prikazuje se ime kategorije u filteru (4)
 - dodat alert da je proizvod dodan u kosaricu (4)
 - omogucit brisanje proizvoda iz kosarice (3)
-- dodat sortiranje - placeholder?(2)
-- proizvodi rapoređeni na više stranica (2) - dodan placeholder
-
-Contact
-- responzivnost (3)
-- maknit reload tablice na enter(2)
 
 Logout
 - dodat alert za odjavu (3)
