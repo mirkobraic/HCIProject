@@ -4,6 +4,7 @@
     display: flex;
     flex-flow: column;
     padding: 0 100px;
+    margin-bottom: 30px;
 }
 
     .container h1 {
@@ -15,7 +16,7 @@
     }
 
 .textHalf {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -27,23 +28,40 @@
 .travelImage {
     margin: auto;
     margin-top: 20px;
+    margin-left: 5%;
     width: 60%;
     max-height: 500px;
 }
 
 .bottuns {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    height: 70px;
 }
 
 .backBottun {
     background-color: gray;
     color: white;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .priceBottun {
     background-color: green;
     color: white;
     padding: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .travelImage {
+        width: 90%;
+    }
 }

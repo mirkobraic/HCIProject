@@ -15,7 +15,7 @@
     }
 
 .textHalf {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -28,10 +28,13 @@
     margin: auto;
     margin-top: 20px;
     width: 60%;
+    margin-left: 5%;
 }
 
 .underTitle {
     display: flex;
+    flex-direction: column;
+    height: 70px;
     justify-content: space-between;
 }
 
@@ -39,4 +42,16 @@
     background-color: gray;
     color: white;
     padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blogImage {
+        width: 90%;
+    }
 }

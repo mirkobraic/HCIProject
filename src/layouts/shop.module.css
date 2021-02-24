@@ -37,10 +37,10 @@
 
 .info {
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .itemImage {
-    margin: auto;
     margin-top: 20px;
     width: 30vw;
     border: 1px solid rgba(0,0,0,0.2);
@@ -62,4 +62,27 @@
     cursor: pointer;
     outline: none;
     border: none;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 881px) {
+    .titleHalf {
+        padding-left: 0;
+    }
+
+    .itemImage {
+        width: 50vw
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .itemImage {
+        width: 60vw;
+    }
 }
