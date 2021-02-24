@@ -37,3 +37,8 @@
 .list li span {
     word-wrap: break-word;
 }
+
+.linkContainer {
+    max-width: 250px;
+    margin: 0 auto;
+}

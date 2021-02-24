@@ -13,3 +13,8 @@
     text-decoration-thickness: 3px;
     text-underline-offset: 2px;
 }
+
+.linkContainer {
+    max-width: 250px;
+    margin: 0 auto;
+}

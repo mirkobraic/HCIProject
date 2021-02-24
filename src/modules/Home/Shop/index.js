@@ -14,14 +14,16 @@ import Category4 from '../../../components/Images/Category4'
 
 const ShopContent = () => (
 	<section className={styles.shopContent}>
-		<Link to={'/shop'}>
-			<h1>
-				Shop&nbsp;
-				<IconContext.Provider value={{style: {'padding-top': "10px"}}}>
-					<FaAngleDoubleRight />
-				</IconContext.Provider>
-			</h1>
-		</Link>
+		<div className={styles.linkContainer}>
+			<Link to={'/shop'}>
+				<h1>
+					Shop&nbsp;
+					<IconContext.Provider value={{style: {'padding-top': "10px"}}}>
+						<FaAngleDoubleRight />
+					</IconContext.Provider>
+				</h1>
+			</Link>
+		</div>
 		<ul className={styles.list}>
 			<li>
 				<ShopCategory image={<Category1/>} title="Snowboarding"/>
