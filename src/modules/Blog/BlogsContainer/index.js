@@ -71,14 +71,15 @@ const BlogContainers = () => {
         <ul className={styles.list}>
           {travelCards.map(node => {
             return (
-              <Link to={`/blog/${node.num}`}>
+              <Link to={`/blog/${node.num}`} className={styles.item}>
                 <li>
-                  <Img fixed={node.image.fixed} />
+                  <Img fixed={node.image.fixed} className={styles.image}/>
                   <p className={styles.containerText}>
                       <p>
-                      <h3 className={styles.title}>{node.title}</h3>
-                      <span>{node.shortInfo.internal.content}</span>
+                          <h3 className={styles.title}>{node.title}</h3>
+                          <span>{node.shortInfo.internal.content}</span>
                       </p>
+                      <p className={styles.date}>{node.date}</p>
                   </p>
                </li>
               </Link>
