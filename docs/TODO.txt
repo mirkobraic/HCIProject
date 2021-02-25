@@ -1,6 +1,8 @@
 Shop
-- fix problem sa localStorage-om za kosaricu (5)
 - kad se stisne na kategoriju u home ne prikazuje se ime kategorije u filteru (4)
+- brisanje cijelog sadrzaja kosarice
+- kasni broj itema u kosarici
+- zadnji red proizvoda u shopu je razdvojen
 
 Logout
 - dodat alert za odjavu (3)
