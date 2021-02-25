@@ -86,7 +86,7 @@ const CartPage = () => {
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
-		<bottun className={styles.shopButton} onClick={() => {navigate(-2)}}>Continue shopping</bottun>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 	
 }
