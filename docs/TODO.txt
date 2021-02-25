@@ -1,8 +1,9 @@
 Shop
 - fix problem sa localStorage-om za kosaricu (5)
-- sredit css (5)
-- sredit css filtera (5)
 - kad se stisne na kategoriju u home ne prikazuje se ime kategorije u filteru (4)
 
 Logout
 - dodat alert za odjavu (3)
+
+Footer
+- sredit neurednost :)
