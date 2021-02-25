@@ -18,3 +18,9 @@ const removeItem = item => {
   }
   localStorage.removeItem(item)
 }
+
+export const myLocalStorage = {
+  getItem,
+  setItem,
+  removeItem
+} 

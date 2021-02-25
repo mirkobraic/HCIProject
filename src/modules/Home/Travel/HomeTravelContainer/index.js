@@ -7,7 +7,7 @@ import styles from './style.module.css'
 const TravelContainers = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulTravelPost {
+      allContentfulTravelPost (limit: 4, sort: {fields: price, order: ASC}){
         nodes {
           shortInfo {
             internal {

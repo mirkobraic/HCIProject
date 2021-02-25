@@ -3,11 +3,12 @@ import { Link } from 'gatsby'
 
 import styles from './style.module.css'
 
+import {myLocalStorage} from '../../../global/helper'
 import { navs as navTabs } from '../../../constants/const'
 import Cart from '../CartIcon'
 
 
-const loggedIn = () => !!localStorage.getItem('loggedIn')
+const loggedIn = () => !!myLocalStorage.getItem('loggedIn')
 
 const NavigationBar = ({ activeTab }) => (
     <nav className={styles.navigationBar}>
@@ -19,7 +20,7 @@ const NavigationBar = ({ activeTab }) => (
         )}
 
         <Link to={loggedIn() ? '/' : '/login'}>
-            <li onClick={loggedIn() ? () => localStorage.removeItem('loggedIn') : () => {}}>
+            <li onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}}>
                 {loggedIn() ? 'Logout' : 'Login'}
             </li>
         </Link>

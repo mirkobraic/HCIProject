@@ -39,6 +39,7 @@ const ShopPage = ({location}) => {
               srcWebp
               base64
               aspectRatio
+             
             }
           }
           technicalInfo {

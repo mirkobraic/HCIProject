@@ -15,6 +15,7 @@ const ShopItem = ({ pageContext }) => {
 
 
   const handleClick = () => {
+    alert('Item is added to cart!')
     setCartItem({title, price, num, quantity: cartItem.quantity + quantity})
   }
 

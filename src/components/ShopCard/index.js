@@ -11,7 +11,7 @@ const index = ({ image, category, title, price, rating, num }) => {
     return (
       <Link to={`/shop/${num}`}>
         <div className={styles.card}>
-          <Img fixed={image} className={styles.cardImage} />
+          <Img className={styles.cardImage} fixed={image}/>
 
           <div className={styles.cardContent}>
               <p className={styles.cardCategory}>
