@@ -17,7 +17,6 @@ const TravelContainers = () => {
           title
           num
           price
-          time
           image {
             fixed(width: 300) {
               src

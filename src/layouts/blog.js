@@ -28,7 +28,7 @@ const BlogPost = ({ pageContext }) => {
                 </Link>
                 <span>{author} {date}</span>
             </p>
-            <ReactMarkdown children={blogText.internal.content} />
+            <ReactMarkdown className={styles.text} children={blogText.internal.content} />
         </p>
       </main>
     </HeaderFooterLayout>
