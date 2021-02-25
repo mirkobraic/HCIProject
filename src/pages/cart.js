@@ -12,15 +12,13 @@ const CartPage = () => {
     }, [update]); 
 
 	let cartItems = []
-	const localStorageKeys = ''
+	const localStorageKeys = Object.keys(localStorage)
 
 	let totalItemsPrice = 0;
 	let shippingCosts = 0;
 	let total = 0;
 
 	if (typeof window !== 'undefined') {
-		const localStorageKeys = Object.keys(localStorage)
-	
 		localStorageKeys.forEach(key => {
 			if (key.includes('cartItem')) {
 				cartItems.push(JSON.parse(localStorage.getItem(key)))
