@@ -32,7 +32,7 @@ const ShopContent = () => (
 				<ShopCategory image={<Category2/>} title="Kayaking"/>
 			</li>
 			<li>
-				<ShopCategory image={<Category3/>} title="Mountain biking"/>
+				<ShopCategory image={<Category3/>} title="Mountain Biking"/>
 			</li>
 			<li>
 				<ShopCategory image={<Category4/>} title="Surfing"/>
