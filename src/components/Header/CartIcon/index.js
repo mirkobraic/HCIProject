@@ -2,15 +2,15 @@ import React from 'react'
 import styles from './style.module.css'
 import { FaShoppingBasket } from 'react-icons/fa';
 import {IconContext} from "react-icons"
-
+import {myLocalStorage} from '../../../global/helper'
 
 const Cart = () => {
     
-    const localStorageKeys = Object.keys(localStorage)
+    const myLocalStorageKeys = Object.keys(myLocalStorage)
     let numberOfCartItems=0
-	localStorageKeys.forEach(key => {
+	myLocalStorageKeys.forEach(key => {
 		if (key.includes('cartItem') ) {
-            numberOfCartItems = numberOfCartItems + JSON.parse(localStorage.getItem(key)).quantity
+            numberOfCartItems = numberOfCartItems + JSON.parse(myLocalStorage.getItem(key)).quantity
 			//cartItems.push(JSON.parse(localStorage.getItem(key)))
 		}
 	})

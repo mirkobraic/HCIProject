@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
+import {myLocalStorage} from '../global/helper'
 
 export const useLocalStorage = (key, defaultValue) => {
-  const stored = localStorage.getItem(key);
+  const stored = myLocalStorage.getItem(key);
   const initial = stored ? JSON.parse(stored) : defaultValue;
   const [value, setValue] = useState(initial);
 
   useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value));
+    myLocalStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
 
   return [value, setValue];
