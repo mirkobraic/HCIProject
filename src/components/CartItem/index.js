@@ -13,11 +13,13 @@ const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {
 
     const decrement = () => {
         if (item.quantity === 0) {
-            return
+            localStorage.removeItem(JSON.stringify(item))
         }
-        item.quantity = item.quantity - 1
-        localStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
-        setUpdate(update => !update)
+        else{
+            item.quantity = item.quantity - 1
+            localStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
+            setUpdate(update => !update)
+        }
     }
 
     return (
