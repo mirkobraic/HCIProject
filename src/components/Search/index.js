@@ -7,10 +7,8 @@ import styles from "./style.module.css"
 const Search = ({ handleChange }) => {
     return (
         <div className={styles.search}>
-            <fieldset className={styles.searchCard}>
-                <IconContext.Provider value={{ style: {fontSize: '20px', color: "gray", 'padding-right': "5px", 'padding-top': "4px"}}}>
-                    <FaSearch />
-                </IconContext.Provider>
+            <div className={styles.searchCard}>
+                <FaSearch className={styles.searchIcon}/>
                 <input
                 type="text"
                 name="search"
@@ -18,7 +16,7 @@ const Search = ({ handleChange }) => {
                 onChange={handleChange}
                 placeholder="Search"
                 />
-            </fieldset>
+            </div>
         </div>
     )
 }

@@ -2,24 +2,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 256.61px;
 }
 
 .searchCard {
     border: none;
     background-color: var(--background-gray);
-    width: 100%;
-}
-
-.searchLabel {
-
+    width: 256.61px;
+    height: 44px;
 }
 
 .searchInput {
     border: none;
-    background-color: var(--background-gray);
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    width: 85%;
+    height: 100%;
+    box-shadow: 0 0 0px 1000px var(--background-gray) inset;
 }
 
+.searchIcon {
+    color: gray;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 11px;
+}
 
 @media screen and (max-width: 626px) {
     .search {
