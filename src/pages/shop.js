@@ -32,15 +32,15 @@ const ShopPage = ({location}) => {
           brand
           productType
           image {
-            fixed(width: 300) {
-              src
-              srcSet
-              srcSetWebp
-              srcWebp
-              base64
-              aspectRatio
              
-            }
+        fluid{
+          aspectRatio
+          base64
+          src
+          srcSet
+          srcSetWebp
+          srcWebp
+        }
           }
           technicalInfo {
             internal {
