@@ -4,6 +4,8 @@ import { useForm } from '../hooks/useForm'
 
 import { useStaticQuery, graphql } from "gatsby"
 
+import styles from './shop.module.css'
+
 import HeaderFooterLayout from "../layouts/headerFooter"
 import HeaderSeparator from '../components/HeaderSeparator'
 
@@ -90,12 +92,18 @@ const ShopPage = ({location}) => {
   return <HeaderFooterLayout activeTab="Shop">
       <HeaderSeparator title="Shop"/>
       <ShopWrapper>
+        <div className={styles.leftHalf}>
         <Filter 
           categoryName={categories.find(i => i.name === filteredValues.category)} 
           handleChange={setFilteredValues} />
-        <Search handleChange={setFilteredValues} />
-        <SortShop handleChange={setFilteredValues} />
-        <ShopItems products={products} />
+        </div>
+        <div className={styles.rightHalf}>
+            <p className={styles.searchSort}>
+                <Search handleChange={setFilteredValues} />
+                <SortShop handleChange={setFilteredValues} />
+            </p>
+            <ShopItems products={products} />
+        </div>
       </ShopWrapper>
     </HeaderFooterLayout>
 }
