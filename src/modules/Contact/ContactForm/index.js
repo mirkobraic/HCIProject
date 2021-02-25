@@ -26,7 +26,7 @@ const ContactForm = () => (
                 </div>
                 <div className={styles.message}>
                     <label htmlFor="message"/>
-                    <input name="message" type="text" placeholder="Message.."/>
+                    <textarea name="message" type="text" placeholder="Message.."/>
                 </div>
                 <button onClick={() => alert('Your message is sent!')}>Submit</button>
             </form>

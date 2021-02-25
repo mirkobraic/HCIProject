@@ -13,3 +13,8 @@
     margin: 0 auto;
     text-align:center;
 }
+
+
+.container:hover h2 {
+    color: var(--main-color);
+}

@@ -9,14 +9,16 @@ import HomeBlogsContainer from '../HomeBlogsContainer'
 
 const BlogContent = () => (
 	<section className={styles.blogContent}>
-		<Link to={'/blog'}>
-			<h1>
-				Blog&nbsp;
-				<IconContext.Provider value={{style: {'padding-top': "10px"}}}>
-					<FaAngleDoubleRight />
-				</IconContext.Provider>
-			</h1>
-		</Link>
+		<div className={styles.linkContainer}>
+			<Link to={'/blog'}>
+				<h1>
+					Blog&nbsp;
+					<IconContext.Provider value={{style: {'padding-top': "10px"}}}>
+						<FaAngleDoubleRight />
+					</IconContext.Provider>
+				</h1>
+			</Link>
+		</div>
 		<HomeBlogsContainer />
 	</section>)
 

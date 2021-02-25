@@ -40,9 +40,9 @@ const TravelContainers = () => {
         <ul className={styles.list}>
           {data.allContentfulTravelPost.nodes.map(node => {
             return (
-              <Link to={`/travel/${node.num}`}>
+              <Link to={`/travel/${node.num}`} className={styles.item}>
                 <li>
-                  <Img fixed={node.image.fixed} />
+                  <Img fixed={node.image.fixed} className={styles.image}/>
                   <p className={styles.containerText}>
                       <p>
                           <h3 className={styles.title}>{node.title}</h3>

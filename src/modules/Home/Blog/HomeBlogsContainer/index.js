@@ -38,9 +38,9 @@ const BlogContainers = () => {
         <ul className={styles.list}>
           {data.allContentfulBlogPost.nodes.map(node => {
             return (
-              <Link to={`/blog/${node.num}`}>
+              <Link to={`/blog/${node.num}`} className={styles.item}>
                 <li>
-                  <Img fixed={node.image.fixed} />
+                  <Img fixed={node.image.fixed} className={styles.image}/>
                   <p className={styles.containerText}>
                       <p>
                           <h3 className={styles.title}>{node.title}</h3>

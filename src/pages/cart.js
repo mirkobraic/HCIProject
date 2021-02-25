@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from "react"
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 
 import styles from './cart.module.css'
-import {myLocalStorage} from '../global/helper'
 import CartItem from '../components/CartItem'
 
 const CartPage = () => {
 	const [update, setUpdate] = useState(false)
 
-	const myLocalStorageKeys = Object.keys(myLocalStorage)
+	const localStorageKeys = Object.keys(localStorage)
 
 	let cartItems = []
-	myLocalStorageKeys.forEach(key => {
+	localStorageKeys.forEach(key => {
 		if (key.includes('cartItem')) {
-			cartItems.push(JSON.parse(myLocalStorage.getItem(key)))
+			cartItems.push(JSON.parse(localStorage.getItem(key)))
 		}
 	})
 
@@ -31,9 +30,7 @@ const CartPage = () => {
 		
 		<p>Shopping cart is empty!</p>
 
-		<Link to={'/shop'} >
-			<bottun className={styles.shopButton}>Continue shopping</bottun>
-		</Link>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 
 	return  <div className={styles.pageContent}>
@@ -60,13 +57,11 @@ const CartPage = () => {
 			<span className={styles.total}>${parseFloat(total).toFixed(2)}</span>
 		</p>
 
-		<Link to={'/'}>
+		<Link to={'/notimplemented'}>
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
-		<Link to={'/shop'} >
-			<bottun className={styles.shopButton}>Continue shopping</bottun>
-		</Link>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 	
 }

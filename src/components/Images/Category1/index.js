@@ -15,8 +15,8 @@ const Category1 = () => {
     }
   `)
    return (
-     <div style={{width: "300px", height: "300px"}}> 
-       <Img fluid={data.myImage.childImageSharp.fluid} />
+     <div style={{width: "300px", height: "300px"}} > 
+       <Img fluid={data.myImage.childImageSharp.fluid} style={{borderRadius: "3px"}}/>
      </div>
    )
 }

@@ -3,6 +3,18 @@
     justify-content: center;
 }
 
+.sortCard {
+    border-color: var(--background-gray);
+}
+
+.sortInput {
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
 @media screen and (max-width: 626px) {
     .sort {
         width: 100%;
