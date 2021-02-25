@@ -5,11 +5,12 @@ import BackgroundImage from "gatsby-background-image"
 import styles from "./style.module.css"
 
 const TitleImage = () => {
+  
   const data = useStaticQuery(graphql`
     query {
-      desktop: file(relativePath: { eq: "snow.jpg" }) {
+      desktop: file(relativePath: { eq: "snow.webp" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
+          fluid{
             ...GatsbyImageSharpFluid_withWebp
           }
         }

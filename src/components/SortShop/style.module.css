@@ -1,11 +1,12 @@
 .sort {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 44px;
 }
 
 .sortCard {
-    border-color: var(--background-gray);
+    border: none;
+    padding-top: 10px;
+    //border-color: var(--background-gray);
+    box-shadow: 1px 1px 5px 1px rgba(1,1,1, 0.5);
 }
 
 .sortInput {
