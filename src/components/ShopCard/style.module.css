@@ -11,9 +11,10 @@
     margin-bottom: 2rem;
 }
 
-.card:hover {
-    transform: scale(1.01);
-}
+    .card:hover {
+        transform: scale(1.01);
+        transition: all 0.2s ease-in-out;
+    }
 .cardContent {
     display: flex;
     flex-direction: column;

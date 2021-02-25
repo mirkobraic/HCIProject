@@ -5,6 +5,7 @@ import { slide as Menu } from "react-burger-menu"
 import OutsideClickHandler from 'react-outside-click-handler'
 import { navs as navigationTabs } from '../../../constants/const'
 import Cart from '../CartIcon'
+import {myLocalStorage} from '../../../global/helper'
 
 import burgerStyles from "./burgerMenuStyle.css"
 import styles from './style.module.css'
@@ -20,6 +21,9 @@ const BurgerMenu = () => {
         setIsOpen(false);
     }
 
+    const loggedIn = () => !!myLocalStorage.getItem('loggedIn');
+    
+
 	return (
 		<OutsideClickHandler onOutsideClick={() => closeMenu()}>
             <Menu isOpen={isOpen} onStateChange={(menuState) => handleStateChange(menuState)} right>
@@ -28,6 +32,13 @@ const BurgerMenu = () => {
                         <div>{tab.toUpperCase()}</div>
                     </Link>
                 ))}
+
+                <Link to={loggedIn() ? '' : '/login'}>
+                    <div onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}}>
+                        {loggedIn() ? 'LOGOUT' : 'LOGIN'}
+                    </div>
+                </Link>
+
 				<Link to={'/cart'}>
 					<div className={styles.cartBurger}>
             			<Cart/>

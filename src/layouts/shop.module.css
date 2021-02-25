@@ -70,6 +70,12 @@
     margin-top: 15px;
 }
 
+    .addToCart:hover {
+        background: rgba(0, 102, 204, 0.75);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
 @media screen and (max-width: 881px) {
     .titleHalf {
         padding-left: 0;

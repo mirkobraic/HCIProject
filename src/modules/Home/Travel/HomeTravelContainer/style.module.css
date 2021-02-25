@@ -14,8 +14,9 @@
     text-decoration-color: var(--main-color);
 }
 
-.item:hover{
+.item:hover {
     transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
 }
 
 .list {

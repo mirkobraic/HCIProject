@@ -78,10 +78,11 @@
     font-size: 18px;
 }
 
-.contactForm button:hover {
-    background: rgba(0, 102, 204, 0.75);
-    cursor: pointer;
-}
+    .contactForm button:hover {
+        background: rgba(0, 102, 204, 0.75);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
 
 @media (max-width: 768px) {
     .form form > div {
