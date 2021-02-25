@@ -105,8 +105,8 @@ const ShopPage = ({location}) => {
                 
             </p>
             <ShopItems products={products} />
-            <PageNumber/>
         </div>
+        <PageNumber/>
       </ShopWrapper>
     </HeaderFooterLayout>
 }

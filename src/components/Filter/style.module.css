@@ -8,7 +8,8 @@
     height: fit-content;
     margin-bottom: 32px;
     margin-right: 32px;
-    box-shadow: 1px 1px 5px 1px rgba(1,1,1, 0.5);
+    margin-left: 14px;
+    box-shadow: 1px 1px 3px 1px rgba(1,1,1, 0.3);
 }
 
 /*

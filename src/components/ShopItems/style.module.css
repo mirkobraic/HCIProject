@@ -3,3 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.shopItemsWrapper::after {
+    content: "";
+    flex: auto;
+  }
+
+  @media (max-width: 552px) {
+    .shopItemsWrapper {
+        justify-content: center;
+    }
+}
