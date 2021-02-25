@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import {navigate} from 'gatsby'
 import { FaWindowClose } from 'react-icons/fa';
 import {IconContext} from "react-icons"
+import {myLocalStorage} from '../global/helper'
 
 import styles from './login.module.css'
-import {myLocalStorage} from '../global/helper'
 
 const users = [
 {
@@ -33,14 +33,14 @@ const Login = () => {
       if (loginSuccessful) {
         myLocalStorage.setItem("loggedIn", username)
         setError('Success')
-        return navigate('/')
+        return navigate(-1)
       }
         setError('Wrong username or password')
     }, 2000)
   }
 
     const closing = () => {
-        return navigate('/')
+        return navigate(-1)
   }
   
   return (

@@ -11,7 +11,7 @@ import PageNumber from "../../../components/PageNumber"
 const BlogContainers = () => {
   const data = useStaticQuery(graphql`
     query {
-         allContentfulBlogPost {
+         allContentfulBlogPost (sort: {fields: date, order: DESC}){
           nodes {
             title
             num
@@ -20,13 +20,6 @@ const BlogContainers = () => {
                     content
                 }
             }
-            blogText{
-                internal {
-                    content
-                }
-            }
-            author
-            date
             image {
               fixed(width: 300) {
                 src
@@ -64,21 +57,22 @@ const BlogContainers = () => {
  
     return (
       <section className={styles.container}>
-        <div className={styles.searchWrapper}>
+        <p className={styles.searchWrapper}>
           <Search handleChange={handleSearch} />
-        </div>
-        <div className={styles.sort}>
           <SortBlog handleChange={handleSearch} />
-        </div>
+        </p>
         <ul className={styles.list}>
           {travelCards.map(node => {
             return (
-              <Link to={`/blog/${node.num}`}>
+              <Link to={`/blog/${node.num}`} className={styles.item}>
                 <li>
-                  <Img fixed={node.image.fixed} />
+                  <Img fixed={node.image.fixed} className={styles.image}/>
                   <p className={styles.containerText}>
-                      <h3 className={styles.title}>{node.title}</h3>
-                      <span>{node.shortInfo.internal.content}</span>
+                      <p>
+                          <h3 className={styles.title}>{node.title}</h3>
+                          <span>{node.shortInfo.internal.content}</span>
+                      </p>
+                      <p className={styles.date}>{node.date}</p>
                   </p>
                </li>
               </Link>

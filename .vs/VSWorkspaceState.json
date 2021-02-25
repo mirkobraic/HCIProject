@@ -3,12 +3,10 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\CartItem",
-    "\\src\\components\\Header",
-    "\\src\\global",
+    "\\src\\components\\ShopCard",
     "\\src\\modules",
-    "\\src\\modules\\Home\\Shop"
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\global\\helper.js",
+  "SelectedNode": "\\src\\components\\ShopCard\\style.module.css",
   "PreviewInSolutionExplorer": false
 }

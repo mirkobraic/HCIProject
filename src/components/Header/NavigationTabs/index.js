@@ -19,7 +19,7 @@ const NavigationBar = ({ activeTab }) => (
             </Link>)
         )}
 
-        <Link to={loggedIn() ? '/' : '/login'}>
+        <Link to={loggedIn() ? '' : '/login'}>
             <li onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}}>
                 {loggedIn() ? 'Logout' : 'Login'}
             </li>

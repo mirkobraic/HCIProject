@@ -19,19 +19,9 @@ const TravelContainers = () => {
               content
             }
           }
-          longText {
-            internal {
-              content
-            }
-          }
           title
           num
           price
-          startLocation{
-            lat
-            lon
-          }
-          time
           image {
             fixed(width: 300) {
               src
@@ -71,16 +61,14 @@ const TravelContainers = () => {
       <section className={styles.container}>
         <div className={styles.searchWrapper}>
           <Search handleChange={handleSearch} />
-        </div>
-        <div className={styles.sort}>
           <SortTravel handleChange={handleSearch} />
         </div>
         <ul className={styles.list}>
           {travelCards.map(node => {
             return (
-              <Link to={`/travel/${node.num}`}>
+              <Link to={`/travel/${node.num}`} className={styles.item}>
                 <li>
-                  <Img fixed={node.image.fixed} />
+                  <Img fixed={node.image.fixed} className={styles.image}/>
                   <p className={styles.containerText}>
                       <p>
                           <h3 className={styles.title}>{node.title}</h3>

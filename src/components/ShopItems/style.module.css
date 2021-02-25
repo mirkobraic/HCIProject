@@ -1,4 +1,11 @@
 .shopItemsWrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 592px) {
+    .shopItemsWrapper {
+        justify-content: center !important;
+    }
 }

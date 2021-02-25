@@ -1,0 +1,23 @@
+.sort {
+    height: 44px;
+}
+
+.sortCard {
+    border: none;
+    padding-top: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(1,1,1, 0.3);
+}
+
+.sortInput {
+    margin-top: 4px;
+    margin-left: 14px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 626px) {
+    .sort {
+        width: 100%;
+    }
+}

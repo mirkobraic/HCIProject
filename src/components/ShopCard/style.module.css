@@ -1,17 +1,14 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    width: 12rem;
-    height: 20rem;
-    margin-right: 2rem;
+    width: 14rem;
+    height: 25rem;
+    margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
-}
-
-.cardImage {
-    height: 10rem;
 }
 
 .cardContent {

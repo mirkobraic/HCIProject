@@ -20,9 +20,13 @@ const Filter = ({ categoryName, handleChange }) => {
             >
               <option value={''}>-</option>
               {
-                categories.map(category => (
-                  <option key={category.name} value={category.name}>{category.name}</option>
-                ))
+                categories.map(category => {
+                  if (category.name == categoryName?.name ?? '') {
+                    return (<option key={category.name} value={category.name} selected>{category.name}</option>)
+                  } else {
+                    return (<option key={category.name} value={category.name}>{category.name}</option>)
+                  }
+                  })
               }
             </select>
           </fieldset>
@@ -77,8 +81,8 @@ const Filter = ({ categoryName, handleChange }) => {
             </label>
             <div className={styles.filterRange}>
               <span>0</span>
-              <input type="range" defaultValue={1000} name="price_range" min={0} max={1000} onChange={handleChange}  />
-              <span>1000</span>
+              <input type="range" defaultValue={2000} name="price_range" min={0} max={2000} onChange={handleChange}  />
+              <span>2000</span>
             </div>
           </fieldset>
       </div>

@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Category3 = () => {
     const data = useStaticQuery(graphql`
     query {
-      myImage: file(relativePath: { eq: "mountainBiking.jpg" }) {
+      myImage: file(relativePath: { eq: "mountainBiking.webp" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
@@ -16,7 +16,7 @@ const Category3 = () => {
   `)
    return (
      <div style={{width: "300px", height: "300px"}}> 
-       <Img fluid={data.myImage.childImageSharp.fluid} />
+       <Img fluid={data.myImage.childImageSharp.fluid} style={{borderRadius: "3px"}}/>
      </div>
    )
 }

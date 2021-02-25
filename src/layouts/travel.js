@@ -32,7 +32,7 @@ const TravelPost = ({ pageContext }) => {
             </p>
             <p>{shortInfo.internal.content}</p>
             <h1>OVERVIEW</h1>
-            <ReactMarkdown children={longText.internal.content} />
+            <ReactMarkdown className={styles.text} children={longText.internal.content} />
         </p>
       </main>
     </HeaderFooterLayout>

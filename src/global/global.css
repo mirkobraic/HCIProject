@@ -47,6 +47,7 @@ html {
     --main-color-light: rgba(0, 102, 204, 0.3);
     --accent-color: rgb(0, 0, 102);
     --background-gray: rgb(230, 230, 230);
+    --background-light-gray: rgb(240, 240, 240);
 }
 
 *, *::after, *::before {

@@ -1,11 +1,14 @@
 import React from 'react'
+import { FaSearch } from 'react-icons/fa';
+import {IconContext} from "react-icons"
 
 import styles from "./style.module.css"
 
 const Search = ({ handleChange }) => {
     return (
         <div className={styles.search}>
-            <fieldset className={styles.searchCard}>
+            <div className={styles.searchCard}>
+                <FaSearch className={styles.searchIcon}/>
                 <input
                 type="text"
                 name="search"
@@ -13,7 +16,7 @@ const Search = ({ handleChange }) => {
                 onChange={handleChange}
                 placeholder="Search"
                 />
-            </fieldset>
+            </div>
         </div>
     )
 }

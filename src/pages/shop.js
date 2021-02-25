@@ -4,6 +4,8 @@ import { useForm } from '../hooks/useForm'
 
 import { useStaticQuery, graphql } from "gatsby"
 
+import styles from './shop.module.css'
+
 import HeaderFooterLayout from "../layouts/headerFooter"
 import HeaderSeparator from '../components/HeaderSeparator'
 
@@ -13,6 +15,7 @@ import ShopWrapper from "../components/ShopWrapper"
 import { categories } from "../constants/const"
 import Search from "../components/Search"
 import SortShop from "../components/SortShop"
+import PageNumber from "../components/PageNumber"
 
 const ShopPage = ({location}) => {
   const data = useStaticQuery(graphql`
@@ -32,14 +35,15 @@ const ShopPage = ({location}) => {
           brand
           productType
           image {
-            fixed(width: 300) {
-              src
-              srcSet
-              srcSetWebp
-              srcWebp
-              base64
-              aspectRatio
-            }
+             
+        fluid{
+          aspectRatio
+          base64
+          src
+          srcSet
+          srcSetWebp
+          srcWebp
+        }
           }
           technicalInfo {
             internal {
@@ -66,7 +70,7 @@ const ShopPage = ({location}) => {
     category: tmp,
     product_type: '',
     brand: '',
-    price_range: 1000,
+    price_range: 2000,
     search: '',
   })
    
@@ -89,12 +93,20 @@ const ShopPage = ({location}) => {
   return <HeaderFooterLayout activeTab="Shop">
       <HeaderSeparator title="Shop"/>
       <ShopWrapper>
+        <div className={styles.leftHalf}>
         <Filter 
           categoryName={categories.find(i => i.name === filteredValues.category)} 
           handleChange={setFilteredValues} />
-        <Search handleChange={setFilteredValues} />
-        <SortShop handleChange={setFilteredValues} />
-        <ShopItems products={products} />
+        </div>
+        <div className={styles.rightHalf}>
+            <p className={styles.searchSort}>
+                <Search handleChange={setFilteredValues} />
+                <SortShop handleChange={setFilteredValues} />
+                
+            </p>
+            <ShopItems products={products} />
+        </div>
+        <PageNumber/>
       </ShopWrapper>
     </HeaderFooterLayout>
 }

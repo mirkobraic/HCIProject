@@ -1,0 +1,90 @@
+.bm-burger-button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30px;
+    right: 25px;
+}
+
+.bm-burger-bars {
+    background-color: #ffffff
+}
+
+.bm-menu {
+    background-color: var(--main-color);
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.bm-cross {
+    background: #ffffff;
+}
+
+.bm-item-list {
+    height: fit-content !important;
+}
+
+.bm-item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Coda";
+    font-size: 25px;
+    margin-bottom: 20px;
+    transition: transform .2s
+}
+
+#react-burger-cross-btn:focus {
+    outline: 0px solid transparent;
+}
+
+#react-burger-menu-btn:focus {
+    outline: 0px solid transparent;
+}
+
+.bm-item:focus {
+    outline: 0px solid transparent;
+}
+
+.bm-item:hover {
+    transform: scale(1.25);
+    color: white;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    top: 0;
+}
+
+.activeBurgerMenuItem {
+    border-bottom: 1px solid #ffffff;
+}
+
+.bm-overlay {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .bm-burger-button {
+        display: none;
+    }
+
+    .bm-menu {
+        display: none;
+    }
+
+    .bm-cross {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500.5px) {
+    .bm-menu-wrap {
+        top: 0;
+        width: 100vw !important
+    }
+}

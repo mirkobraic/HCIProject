@@ -4,7 +4,9 @@ import {myLocalStorage} from '../../global/helper'
 import styles from "./style.module.css"
 
 const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {
+    
     const item = JSON.parse(myLocalStorage.getItem(`cartItem-${num}`))
+ 
 
     const increment = () => {
         item.quantity = item.quantity + 1
@@ -13,12 +15,14 @@ const CartItem = ({ title, price, num, quantity, setUpdate, update }) => {
     }
 
     const decrement = () => {
-        if (item.quantity === 1) {
-            return
+        if (item.quantity === 0) {
+            myLocalStorage.removeItem(JSON.stringify(item))
         }
-        item.quantity = item.quantity - 1
-        myLocalStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
-        setUpdate(update => !update)
+        else{
+            item.quantity = item.quantity - 1
+            myLocalStorage.setItem(`cartItem-${num}`, JSON.stringify(item))
+            setUpdate(update => !update)
+        }
     }
 
     return (

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FaAngleDoubleRight } from 'react-icons/fa';
+import {IconContext} from "react-icons"
 
 import styles from './style.module.css'
 
@@ -12,9 +14,16 @@ import Category4 from '../../../components/Images/Category4'
 
 const ShopContent = () => (
 	<section className={styles.shopContent}>
-		<Link to={'/shop'}>
-			<h1>Shop >></h1>
-		</Link>
+		<div className={styles.linkContainer}>
+			<Link to={'/shop'}>
+				<h1>
+					Shop&nbsp;
+					<IconContext.Provider value={{style: {'padding-top': "10px"}}}>
+						<FaAngleDoubleRight />
+					</IconContext.Provider>
+				</h1>
+			</Link>
+		</div>
 		<ul className={styles.list}>
 			<li>
 				<ShopCategory image={<Category1/>} title="Snowboarding"/>
@@ -23,7 +32,7 @@ const ShopContent = () => (
 				<ShopCategory image={<Category2/>} title="Kayaking"/>
 			</li>
 			<li>
-				<ShopCategory image={<Category3/>} title="Mountain biking"/>
+				<ShopCategory image={<Category3/>} title="Mountain Biking"/>
 			</li>
 			<li>
 				<ShopCategory image={<Category4/>} title="Surfing"/>

@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import styles from './style.module.css';
  
 const ContactForm = () => (
     <main className={styles.contactForm}>
+        
         <section className={styles.form}>
             <h2 className={styles.title}>Send us a message</h2>
             <form>
@@ -25,7 +26,7 @@ const ContactForm = () => (
                 </div>
                 <div className={styles.message}>
                     <label htmlFor="message"/>
-                    <input name="message" type="text" placeholder="Message.."/>
+                    <textarea name="message" type="text" placeholder="Message.."/>
                 </div>
                 <button onClick={() => alert('Your message is sent!')}>Submit</button>
             </form>

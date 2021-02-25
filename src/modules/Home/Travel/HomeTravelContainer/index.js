@@ -7,7 +7,7 @@ import styles from './style.module.css'
 const TravelContainers = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulTravelPost {
+      allContentfulTravelPost (limit: 4, sort: {fields: price, order: ASC}){
         nodes {
           shortInfo {
             internal {
@@ -17,7 +17,6 @@ const TravelContainers = () => {
           title
           num
           price
-          time
           image {
             fixed(width: 300) {
               src
@@ -40,9 +39,9 @@ const TravelContainers = () => {
         <ul className={styles.list}>
           {data.allContentfulTravelPost.nodes.map(node => {
             return (
-              <Link to={`/travel/${node.num}`}>
+              <Link to={`/travel/${node.num}`} className={styles.item}>
                 <li>
-                  <Img fixed={node.image.fixed} />
+                  <Img fixed={node.image.fixed} className={styles.image}/>
                   <p className={styles.containerText}>
                       <p>
                           <h3 className={styles.title}>{node.title}</h3>

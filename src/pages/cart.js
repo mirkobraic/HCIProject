@@ -1,39 +1,57 @@
 import React, { useState, useEffect } from "react"
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 
 import styles from './cart.module.css'
-import {myLocalStorage} from '../global/helper'
 import CartItem from '../components/CartItem'
 
 const CartPage = () => {
 	const [update, setUpdate] = useState(false)
 
-	const myLocalStorageKeys = Object.keys(myLocalStorage)
-
-	let cartItems = []
-	myLocalStorageKeys.forEach(key => {
-		if (key.includes('cartItem')) {
-			cartItems.push(JSON.parse(myLocalStorage.getItem(key)))
-		}
-	})
-
 	useEffect(() => {
         console.log("Updated");
-    }, [update]);
+    }, [update]); 
 
-	const totalItemsPrice = cartItems.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
-	const shippingCosts = totalItemsPrice * 0.05;
-	const total = totalItemsPrice + shippingCosts;
+	let cartItems = []
+	const localStorageKeys = Object.keys(localStorage)
 
-	if(cartItems.length===0)
+	let totalItemsPrice = 0;
+	let shippingCosts = 0;
+	let total = 0;
+
+	if (typeof window !== 'undefined') {
+		localStorageKeys.forEach(key => {
+			if (key.includes('cartItem')) {
+				cartItems.push(JSON.parse(localStorage.getItem(key)))
+			}
+		})	
+	
+		totalItemsPrice = cartItems.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+		shippingCosts = totalItemsPrice * 0.05;
+		total = totalItemsPrice + shippingCosts;
+	
+	}
+	
+	const removeAll = () => {
+		//TODO: ne radi
+		if(localStorageKeys !== '' && typeof window !== 'undefined' &&  window.confirm("All items form cart are going to be deleted. Are you sure?")){
+			localStorageKeys.forEach(key => {
+				if (key.includes('cartItem')) {
+					localStorage.removeItem(key)
+				}
+			})
+			navigate(-1)
+		}
+		return
+	}
+	
+
+	if(cartItems.length ===0)
 		return <div className={styles.pageContent}>
 		<h1 className={styles.pageTitle}>Shopping Cart</h1>
 		
 		<p>Shopping cart is empty!</p>
 
-		<Link to={'/shop'} >
-			<bottun className={styles.shopButton}>Continue shopping</bottun>
-		</Link>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 
 	return  <div className={styles.pageContent}>
@@ -60,13 +78,13 @@ const CartPage = () => {
 			<span className={styles.total}>${parseFloat(total).toFixed(2)}</span>
 		</p>
 
-		<Link to={'/'}>
+		<p className={styles.removeButton} onClick={() => removeAll()}> Remove all items from cart? </p>
+
+		<Link to={'/notimplemented'}>
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
-		<Link to={'/shop'} >
-			<bottun className={styles.shopButton}>Continue shopping</bottun>
-		</Link>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
 	</div>
 	
 }
