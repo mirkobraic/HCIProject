@@ -20,9 +20,13 @@ const Filter = ({ categoryName, handleChange }) => {
             >
               <option value={''}>-</option>
               {
-                categories.map(category => (
-                  <option key={category.name} value={category.name}>{category.name}</option>
-                ))
+                categories.map(category => {
+                  if (category.name == categoryName?.name ?? '') {
+                    return (<option key={category.name} value={category.name} selected>{category.name}</option>)
+                  } else {
+                    return (<option key={category.name} value={category.name}>{category.name}</option>)
+                  }
+                  })
               }
             </select>
           </fieldset>
