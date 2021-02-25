@@ -19,19 +19,9 @@ const TravelContainers = () => {
               content
             }
           }
-          longText {
-            internal {
-              content
-            }
-          }
           title
           num
           price
-          startLocation{
-            lat
-            lon
-          }
-          time
           image {
             fixed(width: 300) {
               src

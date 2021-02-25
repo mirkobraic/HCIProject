@@ -11,7 +11,7 @@ import PageNumber from "../../../components/PageNumber"
 const BlogContainers = () => {
   const data = useStaticQuery(graphql`
     query {
-         allContentfulBlogPost {
+         allContentfulBlogPost (sort: {fields: date, order: DESC}){
           nodes {
             title
             num
@@ -20,13 +20,6 @@ const BlogContainers = () => {
                     content
                 }
             }
-            blogText{
-                internal {
-                    content
-                }
-            }
-            author
-            date
             image {
               fixed(width: 300) {
                 src

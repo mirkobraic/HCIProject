@@ -13,11 +13,6 @@ exports.createPages = async ({ graphql, actions }) => {
       nodes {
         title
         num
-        shortInfo{
-            internal {
-                    content
-                }
-        }
         blogText{
             internal {
                     content
@@ -53,11 +48,6 @@ exports.createPages = async ({ graphql, actions }) => {
           title
           num
           price
-          startLocation{
-            lat
-            lon
-          }
-          time
           image {
             fluid{
               src
