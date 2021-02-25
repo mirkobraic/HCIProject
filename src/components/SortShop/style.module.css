@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 720) {
     .sort {
         right: 0;
         margin-bottom: 32px;

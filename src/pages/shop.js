@@ -15,6 +15,7 @@ import ShopWrapper from "../components/ShopWrapper"
 import { categories } from "../constants/const"
 import Search from "../components/Search"
 import SortShop from "../components/SortShop"
+import PageNumber from "../components/PageNumber"
 
 const ShopPage = ({location}) => {
   const data = useStaticQuery(graphql`
@@ -101,8 +102,10 @@ const ShopPage = ({location}) => {
             <p className={styles.searchSort}>
                 <Search handleChange={setFilteredValues} />
                 <SortShop handleChange={setFilteredValues} />
+                
             </p>
             <ShopItems products={products} />
+            <PageNumber/>
         </div>
       </ShopWrapper>
     </HeaderFooterLayout>

@@ -7,7 +7,7 @@ const ShopWrapper = ({ children }) => {
     return (
         <div class={styles.shopWrapper}>
             {children}
-            <PageNumber/>
+            
         </div>
     )
 }
