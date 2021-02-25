@@ -11,10 +11,9 @@
     margin-bottom: 2rem;
 }
 
-.cardImage {
-    //height: 10rem;
+.card:hover {
+    transform: scale(1.01);
 }
-
 .cardContent {
     display: flex;
     flex-direction: column;

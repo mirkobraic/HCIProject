@@ -18,3 +18,7 @@
 .container:hover h2 {
     color: var(--main-color);
 }
+
+.container:hover {
+    transform: scale(1.01);
+}

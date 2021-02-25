@@ -15,6 +15,9 @@
 	text-decoration-color: var(--main-color);
 }
 
+.item:hover {
+	transform: scale(1.01);
+}
 
 .list {
 	padding-left: 0;
