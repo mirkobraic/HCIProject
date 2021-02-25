@@ -1,13 +1,8 @@
-Navigation
-- dodat indikator da su proizvodi u kosarici (2)
-
 Shop
 - fix problem sa localStorage-om za kosaricu (5)
 - sredit css (5)
 - sredit css filtera (5)
 - kad se stisne na kategoriju u home ne prikazuje se ime kategorije u filteru (4)
-- dodat alert da je proizvod dodan u kosaricu (4)
-- omogucit brisanje proizvoda iz kosarice (3)
 
 Logout
 - dodat alert za odjavu (3)
