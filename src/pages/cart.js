@@ -25,6 +25,18 @@ const CartPage = () => {
 	const shippingCosts = totalItemsPrice * 0.05;
 	const total = totalItemsPrice + shippingCosts;
 
+	const removeAll = () => {
+		let answer = window.confirm("All items form cart are going to be deleted. Are you sure?")
+		if(answer == true){
+			localStorageKeys.forEach(key => {
+				if (key.includes('cartItem')) {
+					localStorage.removeItem(key)
+				}
+			})
+			navigate(-1)
+		}
+	}
+
 	if(cartItems.length===0)
 		return <div className={styles.pageContent}>
 		<h1 className={styles.pageTitle}>Shopping Cart</h1>
@@ -57,6 +69,8 @@ const CartPage = () => {
 			<span className={styles.total}>Total</span>
 			<span className={styles.total}>${parseFloat(total).toFixed(2)}</span>
 		</p>
+
+		<p className={styles.removeButton} onClick={() => removeAll()}> Remove all items from cart? </p>
 
 		<Link to={'/notimplemented'}>
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
