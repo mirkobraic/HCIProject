@@ -1,33 +1,41 @@
 import React, { useState, useEffect } from "react"
 import { Link, navigate } from 'gatsby'
 
-//import {mylocalStorage} from '../global/helper'
 import styles from './cart.module.css'
 import CartItem from '../components/CartItem'
 
 const CartPage = () => {
 	const [update, setUpdate] = useState(false)
 
-	const localStorageKeys = Object.keys(localStorage)
-
-	let cartItems = []
-	localStorageKeys.forEach(key => {
-		if (key.includes('cartItem')) {
-			cartItems.push(JSON.parse(localStorage.getItem(key)))
-		}
-	})
-
 	useEffect(() => {
         console.log("Updated");
-    }, [update]);
+    }, [update]); 
 
-	const totalItemsPrice = cartItems.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
-	const shippingCosts = totalItemsPrice * 0.05;
-	const total = totalItemsPrice + shippingCosts;
+	let cartItems = []
+	const localStorageKeys = ''
 
+	let totalItemsPrice = 0;
+	let shippingCosts = 0;
+	let total = 0;
+
+	if (typeof window !== 'undefined') {
+		const localStorageKeys = Object.keys(localStorage)
+	
+		localStorageKeys.forEach(key => {
+			if (key.includes('cartItem')) {
+				cartItems.push(JSON.parse(localStorage.getItem(key)))
+			}
+		})	
+	
+		totalItemsPrice = cartItems.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+		shippingCosts = totalItemsPrice * 0.05;
+		total = totalItemsPrice + shippingCosts;
+	
+	}
+	
 	const removeAll = () => {
-		let answer = window.confirm("All items form cart are going to be deleted. Are you sure?")
-		if(answer == true){
+		//TODO: ne radi
+		if(localStorageKeys !== '' && typeof window !== 'undefined' &&  window.confirm("All items form cart are going to be deleted. Are you sure?")){
 			localStorageKeys.forEach(key => {
 				if (key.includes('cartItem')) {
 					localStorage.removeItem(key)
@@ -35,9 +43,11 @@ const CartPage = () => {
 			})
 			navigate(-1)
 		}
+		return
 	}
+	
 
-	if(cartItems.length===0)
+	if(cartItems.length ===0)
 		return <div className={styles.pageContent}>
 		<h1 className={styles.pageTitle}>Shopping Cart</h1>
 		
@@ -76,7 +86,7 @@ const CartPage = () => {
 			<bottun className={styles.homeButton}>Proceed to checkout</bottun>
 		</Link>
 
-		<bottun className={styles.shopButton} onClick={() => {navigate(-1)}}>Continue shopping</bottun>
+		<bottun className={styles.shopButton} onClick={() => {navigate(-2)}}>Continue shopping</bottun>
 	</div>
 	
 }
