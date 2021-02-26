@@ -3,8 +3,6 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Header\\BurgerMenu",
-    "\\src\\components\\Header\\CartIcon",
     "\\src\\constants",
     "\\src\\global",
     "\\src\\modules",
