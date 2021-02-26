@@ -3,10 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\ShopCard",
+    "\\src\\components\\Header\\BurgerMenu",
+    "\\src\\components\\Header\\CartIcon",
+    "\\src\\constants",
+    "\\src\\global",
     "\\src\\modules",
+    "\\src\\modules\\Blog",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\ShopCard\\style.module.css",
+  "SelectedNode": "\\src\\components\\CartItem",
   "PreviewInSolutionExplorer": false
 }

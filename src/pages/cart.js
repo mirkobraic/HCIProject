@@ -12,13 +12,13 @@ const CartPage = () => {
     }, [update]); 
 
 	let cartItems = []
-	const localStorageKeys = Object.keys(localStorage)
 
 	let totalItemsPrice = 0;
 	let shippingCosts = 0;
 	let total = 0;
 
 	if (typeof window !== 'undefined') {
+		const localStorageKeys = Object.keys(localStorage)
 		localStorageKeys.forEach(key => {
 			if (key.includes('cartItem')) {
 				cartItems.push(JSON.parse(localStorage.getItem(key)))
@@ -32,8 +32,9 @@ const CartPage = () => {
 	}
 	
 	const removeAll = () => {
-		//TODO: ne radi
-		if(localStorageKeys !== '' && typeof window !== 'undefined' &&  window.confirm("All items form cart are going to be deleted. Are you sure?")){
+		if(typeof window !== 'undefined' &&  window.confirm("All items form cart are going to be deleted. Are you sure?")){
+			
+			const localStorageKeys = Object.keys(localStorage)
 			localStorageKeys.forEach(key => {
 				if (key.includes('cartItem')) {
 					localStorage.removeItem(key)
