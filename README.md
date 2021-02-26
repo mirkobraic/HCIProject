@@ -11,3 +11,9 @@
     ```shell
     https://extreme-sports.netlify.app
     ```
+    
+3. **Obrana**
+
+    ```https://github.com/mirkobraic/HCIProject/blob/master/docs/obrana/extreme-sports.pptx```
+    
+    ```https://github.com/mirkobraic/HCIProject/blob/master/docs/obrana/izvjestaj.docx```
